@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ModMetaData>
+    <name>Gojis-Misc-Genes</name>
+    <author>Goji</author>
+    <packageId>Goji.GojisMiscGenes</packageId>
+    <description>This mod adds various genes.</description>
+    <supportedVersions>
+        <li>1.5</li>
+    </supportedVersions>
+    <loadAfter>
+        <li>Ludeon.RimWorld</li>
+        <li>Ludeon.RimWorld.Royalty</li>
+        <li>Ludeon.RimWorld.Biotech</li>
+        <li>Ludeon.RimWorld.Anomaly</li>
+        <li>brrainz.harmony</li>
+    </loadAfter>
+</ModMetaData>
