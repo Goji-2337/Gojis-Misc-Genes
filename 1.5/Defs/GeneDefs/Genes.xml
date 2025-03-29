@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <GeneDef>
+        <defName>Goji_MechaniteProne</defName>
+        <label>mechanite prone</label>
+        <description>Carriers of this gene are more susceptible to mechanite infections.</description>
+        <displayCategory>Miscellaneous</displayCategory>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-1</biostatMet>
+    </GeneDef>
+
+</Defs>
