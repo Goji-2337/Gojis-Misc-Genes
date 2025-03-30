@@ -10,4 +10,14 @@
         <biostatMet>-1</biostatMet>
     </GeneDef>
 
+    <GeneDef>
+        <defName>Goji_PainStimulated</defName>
+        <label>pain stimulated</label>
+        <description>Carriers of this gene convert pain into stimulation, boosting their focus even as their bodies suffer.</description>
+        <displayCategory>Archite</displayCategory>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <biostatArc>1</biostatArc>
+    </GeneDef>
+
 </Defs>
