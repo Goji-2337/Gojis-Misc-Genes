@@ -29,4 +29,13 @@
         <biostatMet>-1</biostatMet>
     </GeneDef>
 
+    <GeneDef>
+        <defName>Goji_Hibernation</defName>
+        <label>hibernation</label>
+        <description>Carriers of this gene can enter a state of deep torpor in extreme cold, slowing the debilitating effects of hypothermia.</description>
+        <displayCategory>Miscellaneous</displayCategory>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-1</biostatMet>
+    </GeneDef>
+
 </Defs>
