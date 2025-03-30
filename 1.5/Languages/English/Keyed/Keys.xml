@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <Goji_GauranlenDescendantExists>Cannot add Gauranlen Descendant gene. {PAWN_nameDef} already possesses this unique archite bloodline.</Goji_GauranlenDescendantExists>
+
+</LanguageData>

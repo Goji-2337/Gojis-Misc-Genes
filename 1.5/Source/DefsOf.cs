@@ -13,6 +13,9 @@ namespace GojisMiscGenes
         public static IncidentDef Disease_FibrousMechanites;
         public static IncidentDef Disease_SensoryMechanites;
         public static HediffDef HypothermicSlowdown;
+        public static GeneDef Goji_GauranlenDescendant;
+        public static AbilityDef Goji_CommandDryad;
+        public static ThoughtDef Goji_DryadDiedGreaterDebuff;
 
         static DefsOf()
         {
