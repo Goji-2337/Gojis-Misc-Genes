@@ -20,4 +20,13 @@
         <biostatArc>1</biostatArc>
     </GeneDef>
 
+    <GeneDef>
+        <defName>Goji_Clairvoyance</defName>
+        <label>clairvoyance</label>
+        <description>Carriers of this gene are gifted with a rare psychic attunement that unlocks their perception of distant places.</description>
+        <displayCategory>Miscellaneous</displayCategory>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-1</biostatMet>
+    </GeneDef>
+
 </Defs>

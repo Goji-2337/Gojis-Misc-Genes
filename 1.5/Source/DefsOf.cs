@@ -8,6 +8,7 @@ namespace GojisMiscGenes
     {
         public static GeneDef Goji_MechaniteProne;
         public static GeneDef Goji_PainStimulated;
+        public static GeneDef Goji_Clairvoyance;
         public static IncidentDef Disease_FibrousMechanites;
         public static IncidentDef Disease_SensoryMechanites;
 
