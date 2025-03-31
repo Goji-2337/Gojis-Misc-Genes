@@ -28,19 +28,21 @@ namespace GojisMiscGenes
             int cocoonsAffected = 0;
             Map map = caster.Map;
 
-            List<Thing> allCocoons = map.listerThings.ThingsOfDef(ThingDefOf.DryadCocoon);
 
-            foreach (Thing cocoonThing in allCocoons.ToList())
+            foreach (Thing cocoonThing in map.listerThings.AllThings.ToList())
             {
                 CompDryadCocoon cocoonComp = cocoonThing.TryGetComp<CompDryadCocoon>();
-                bool isTransforming = !cocoonComp.innerContainer.NullOrEmpty() &&
-                                cocoonComp.dryadKind != null;
-
-                if (isTransforming)
+                if (cocoonComp != null)
                 {
-                    cocoonComp.Complete();
-                    cocoonsAffected++;
-                    FleckMaker.ThrowDustPuff(cocoonThing.Position.ToVector3Shifted(), map, 1.5f);
+                    bool isTransforming = !cocoonComp.innerContainer.NullOrEmpty() &&
+                cocoonComp.dryadKind != null;
+
+                    if (isTransforming)
+                    {
+                        cocoonComp.Complete();
+                        cocoonsAffected++;
+                        FleckMaker.ThrowDustPuff(cocoonThing.Position.ToVector3Shifted(), map, 1.5f);
+                    }
                 }
             }
 

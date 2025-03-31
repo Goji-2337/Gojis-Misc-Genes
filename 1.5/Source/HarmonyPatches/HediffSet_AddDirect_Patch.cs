@@ -9,7 +9,7 @@ namespace GojisMiscGenes
     {
         public static bool Prefix(HediffSet __instance, ref Hediff hediff)
         {
-            if (hediff.def == HediffDefOf.Hypothermia && __instance.pawn.genes.HasActiveGene(DefsOf.Goji_Hibernation))
+            if (hediff.def == HediffDefOf.Hypothermia && __instance.pawn.HasActiveGene(DefsOf.Goji_Hibernation))
             {
                 var severity = hediff.Severity;
                 Hediff firstHediffOfDef = __instance.pawn.health.hediffSet.GetFirstHediffOfDef(DefsOf.HypothermicSlowdown);
