@@ -60,4 +60,13 @@
         <biostatMet>-1</biostatMet>
     </GeneDef>
 
+    <GeneDef>
+        <defName>Goji_NatureRhythm</defName>
+        <label>nature rhythm</label>
+        <description>Carriers of this gene have a deep psychic connection to the natural world, allowing their psychic sensitivity to influence the speed at which they prune Gauranlen trees.</description>
+        <displayCategory>Miscellaneous</displayCategory>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-1</biostatMet>
+    </GeneDef>
+
 </Defs>
