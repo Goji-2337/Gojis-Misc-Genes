@@ -51,4 +51,13 @@
         <biostatArc>1</biostatArc>
     </GeneDef>
 
+    <GeneDef>
+        <defName>Goji_CheekPouch</defName>
+        <label>cheek pouch</label>
+        <description>Carriers of this gene develop specialised cheek pouches, allowing them to stash more food for later consumption.</description>
+        <displayCategory>Miscellaneous</displayCategory>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-1</biostatMet>
+    </GeneDef>
+
 </Defs>
