@@ -66,17 +66,20 @@ namespace GojisMiscGenes
             List<Thing> allThings = map.listerThings.AllThings.ToList();
             foreach (Thing thing in allThings)
             {
-                CompDryadCocoon cocoonComp = thing.TryGetComp<CompDryadCocoon>();
+                var cocoonComp = thing.TryGetComp<CompDryadHolder>();
                 if (cocoonComp != null)
                 {
-                    if (!cocoonComp.innerContainer.NullOrEmpty() && cocoonComp.dryadKind != null)
+                    if (!cocoonComp.innerContainer.NullOrEmpty())
                     {
                         Pawn pawnInside = cocoonComp.innerContainer.FirstOrDefault() as Pawn;
-                        if (pawnInside != null && casterDryads.Contains(pawnInside))
+                        if (pawnInside != null)
                         {
-                            cocoonComp.Complete();
-                            cocoonsAffected++;
-                            FleckMaker.ThrowDustPuff(thing.Position.ToVector3Shifted(), map, 1.5f);
+                            if (casterDryads.Contains(pawnInside))
+                            {
+                                cocoonComp.Complete();
+                                cocoonsAffected++;
+                                FleckMaker.ThrowDustPuff(thing.Position.ToVector3Shifted(), map, 1.5f);
+                            }
                         }
                     }
                 }
