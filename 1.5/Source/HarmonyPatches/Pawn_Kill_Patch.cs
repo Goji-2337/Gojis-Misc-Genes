@@ -10,29 +10,38 @@ namespace GojisMiscGenes
     [HarmonyPatch(typeof(Pawn), nameof(Pawn.Kill))]
     public static class Pawn_Kill_Patch
     {
-        public static void Prefix(Pawn __instance)
+        public static void Prefix(Pawn __instance, DamageInfo? dinfo, Hediff exactCulprit = null)
         {
-            if (__instance.genes != null && __instance.HasActiveGene(DefsOf.Goji_GauranlenDescendant))
+            if (__instance.Map == null || __instance.genes == null || !__instance.HasActiveGene(DefsOf.Goji_GauranlenDescendant))
             {
-                foreach (Thing tree in __instance.Map.listerThings.ThingsOfDef(ThingDefOf.Plant_TreeGauranlen))
-                {
-                    CompTreeConnection treeComp = tree.TryGetComp<CompTreeConnection>();
-                    var dryadsList = treeComp.dryads;
-                    List<Pawn> dryadsCopy = new List<Pawn>(dryadsList);
+                return;
+            }
 
-                    foreach (Pawn dryad in dryadsCopy)
+            foreach (Thing treeThing in __instance.Map.listerThings.ThingsOfDef(ThingDefOf.Plant_TreeGauranlen))
+            {
+                CompTreeConnection treeComp = treeThing.TryGetComp<CompTreeConnection>();
+
+                if (treeComp != null && treeComp.ConnectedPawn == __instance)
+                {
+                    if (treeComp.dryads != null)
                     {
-                        if (dryad.Spawned && !dryad.Dead)
+                        List<Pawn> dryadsCopy = new List<Pawn>(treeComp.dryads);
+
+                        foreach (Pawn dryad in dryadsCopy)
                         {
-                            var cocoon = GenSpawn.Spawn(ThingDefOf.DryadCocoon, dryad.Position, dryad.Map);
-                            CompDryadCocoon cocoonComp = cocoon.TryGetComp<CompDryadCocoon>();
-                            if (cocoonComp != null)
+                            if (dryad != null && dryad.Spawned && !dryad.Dead)
                             {
-                                cocoonComp.TryAcceptPawn(dryad);
-                            }
-                            else
-                            {
-                                cocoon.Destroy();
+                                var cocoon = GenSpawn.Spawn(ThingDefOf.DryadCocoon, dryad.Position, dryad.Map);
+                                CompDryadCocoon cocoonComp = cocoon.TryGetComp<CompDryadCocoon>();
+                                if (cocoonComp != null)
+                                {
+                                    cocoonComp.TryAcceptPawn(dryad);
+                                }
+                                else
+                                {
+                                    Log.Error($"GojisMiscGenes: Failed to get CompDryadCocoon for spawned cocoon at {dryad.Position} for dryad {dryad.LabelShort}. Destroying cocoon.");
+                                    cocoon.Destroy();
+                                }
                             }
                         }
                     }

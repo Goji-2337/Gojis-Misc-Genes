@@ -17,16 +17,6 @@ namespace GojisMiscGenes
             {
                 return DefsOf.Goji_DryadDiedGreaterDebuff;
             }
-            else
-            {
-                foreach (Pawn otherPawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive)
-                {
-                    if (otherPawn != connectedPawn && otherPawn.HasActiveGene(DefsOf.Goji_GauranlenDescendant))
-                    {
-                        otherPawn.needs?.mood?.thoughts?.memories.TryGainMemory(DefsOf.Goji_DryadDiedGreaterDebuff);
-                    }
-                }
-            }
             return originalDef;
         }
 

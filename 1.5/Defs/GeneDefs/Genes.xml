@@ -41,14 +41,13 @@
     <GeneDef>
         <defName>Goji_GauranlenDescendant</defName>
         <label>gauranlen descendant</label>
-        <description>Carriers of this gene inherit the ancient bloodline of the dryad queen, granting them the exclusive power to awaken dryad cocoons at will.</description>
-        <displayCategory>Archite</displayCategory>
+        <description>Carriers of this gene inherit the ancient bloodline of the dryad queen, granting them the exclusive power to awaken dryad cocoons linked to their connected Gauranlen trees at will.</description>
+        <displayCategory>Miscellaneous</displayCategory>
         <abilities>
             <li>Goji_CommandDryad</li>
         </abilities>
         <biostatCpx>2</biostatCpx>
         <biostatMet>-1</biostatMet>
-        <biostatArc>1</biostatArc>
     </GeneDef>
 
     <GeneDef>
