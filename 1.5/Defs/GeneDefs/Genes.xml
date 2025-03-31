@@ -68,4 +68,13 @@
         <biostatMet>-1</biostatMet>
     </GeneDef>
 
+    <GeneDef>
+        <defName>Goji_WindRider</defName>
+        <label>wind rider</label>
+        <description>Carriers of this gene ride the currents and find protection from the force of wild winds, though they become slow when the air is still.</description>
+        <displayCategory>Miscellaneous</displayCategory>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-1</biostatMet>
+    </GeneDef>
+
 </Defs>

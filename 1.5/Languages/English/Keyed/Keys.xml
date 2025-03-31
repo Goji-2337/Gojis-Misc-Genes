@@ -4,4 +4,6 @@
     <Goji_StatPart_GeneDependent_Prefix>{0}:</Goji_StatPart_GeneDependent_Prefix>
     <Goji_StatPart_GeneDependent_Suffix>(Gene: {0})</Goji_StatPart_GeneDependent_Suffix>
 
+    <Goji_StatPart_WindRiderSpeed>Wind speed:</Goji_StatPart_WindRiderSpeed>
+
 </LanguageData>

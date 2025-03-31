@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/StatDef[defName="MoveSpeed"]/parts</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/StatDef[defName="MoveSpeed"]</xpath>
+            <value>
+                <parts>
+                    <li Class="GojisMiscGenes.StatPart_WindRiderSpeed" />
+                </parts>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/StatDef[defName="MoveSpeed"]/parts</xpath>
+            <value>
+                <li Class="GojisMiscGenes.StatPart_WindRiderSpeed" />
+            </value>
+        </match>
+    </Operation>
+
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Ideology</li>

@@ -17,6 +17,7 @@ namespace GojisMiscGenes
         public static AbilityDef Goji_CommandDryad;
         public static ThoughtDef Goji_DryadDiedGreaterDebuff;
         public static GeneDef Goji_CheekPouch;
+        public static GeneDef Goji_WindRider;
 
         static DefsOf()
         {
