@@ -6,8 +6,8 @@
         <label>mechanite prone</label>
         <description>Carriers of this gene are more susceptible to mechanite infections.</description>
         <displayCategory>Miscellaneous</displayCategory>
-        <biostatCpx>2</biostatCpx>
-        <biostatMet>-1</biostatMet>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>+1</biostatMet>
     </GeneDef>
 
     <GeneDef>
@@ -16,7 +16,7 @@
         <description>Carriers of this gene convert pain into stimulation, boosting their focus even as their bodies suffer.</description>
         <displayCategory>Archite</displayCategory>
         <biostatCpx>2</biostatCpx>
-        <biostatMet>-1</biostatMet>
+        <biostatMet>0</biostatMet>
         <biostatArc>1</biostatArc>
     </GeneDef>
 
@@ -25,7 +25,7 @@
         <label>clairvoyance</label>
         <description>Carriers of this gene are gifted with a rare psychic attunement that unlocks their perception of distant places.</description>
         <displayCategory>Miscellaneous</displayCategory>
-        <biostatCpx>2</biostatCpx>
+        <biostatCpx>1</biostatCpx>
         <biostatMet>-1</biostatMet>
     </GeneDef>
 
@@ -34,7 +34,7 @@
         <label>hibernation</label>
         <description>Carriers of this gene can enter a state of deep torpor in extreme cold, slowing the debilitating effects of hypothermia.</description>
         <displayCategory>Miscellaneous</displayCategory>
-        <biostatCpx>2</biostatCpx>
+        <biostatCpx>1</biostatCpx>
         <biostatMet>-1</biostatMet>
     </GeneDef>
 
@@ -46,8 +46,8 @@
         <abilities>
             <li>Goji_CommandDryad</li>
         </abilities>
-        <biostatCpx>2</biostatCpx>
-        <biostatMet>-1</biostatMet>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-3</biostatMet>
     </GeneDef>
 
     <GeneDef>
@@ -55,7 +55,7 @@
         <label>cheek pouch</label>
         <description>Carriers of this gene develop specialised cheek pouches, allowing them to stash more food for later consumption.</description>
         <displayCategory>Miscellaneous</displayCategory>
-        <biostatCpx>2</biostatCpx>
+        <biostatCpx>1</biostatCpx>
         <biostatMet>-1</biostatMet>
     </GeneDef>
 
@@ -63,9 +63,10 @@
         <defName>Goji_NatureRhythm</defName>
         <label>nature rhythm</label>
         <description>Carriers of this gene have a deep psychic connection to the natural world, allowing their psychic sensitivity to influence the speed at which they prune Gauranlen trees.</description>
-        <displayCategory>Miscellaneous</displayCategory>
+        <displayCategory>Archite</displayCategory>
         <biostatCpx>2</biostatCpx>
-        <biostatMet>-1</biostatMet>
+        <biostatMet>0</biostatMet>
+        <biostatArc>1</biostatArc>
     </GeneDef>
 
     <GeneDef>
@@ -73,7 +74,7 @@
         <label>wind rider</label>
         <description>Carriers of this gene ride the currents and find protection from the force of wild winds, though they become slow when the air is still.</description>
         <displayCategory>Miscellaneous</displayCategory>
-        <biostatCpx>2</biostatCpx>
+        <biostatCpx>1</biostatCpx>
         <biostatMet>-1</biostatMet>
     </GeneDef>
 
