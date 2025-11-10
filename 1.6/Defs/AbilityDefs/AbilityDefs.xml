@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <AbilityDef>
+        <defName>Goji_CommandDryad</defName>
+        <label>command dryad</label>
+        <description>Instantly awakens all gestating dryad cocoons connected to the caster's Gauranlen trees across the map. The cooldown is proportional to the number of cocoons awakened.</description>
+        <iconPath>UI/Abilities/WordOfTrust</iconPath>
+        <cooldownTicksRange>100</cooldownTicksRange>
+        <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+        <hostile>false</hostile>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <targetRequired>False</targetRequired>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <warmupTime>1.0</warmupTime>
+            <range>-1</range>
+            <drawAimPie>False</drawAimPie>
+            <targetParams>
+                <canTargetSelf>true</canTargetSelf>
+                <canTargetLocations>false</canTargetLocations>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="GojisMiscGenes.CompProperties_AbilityCommandDryad">
+                <cooldownPerCocoonDays>1</cooldownPerCocoonDays>
+            </li>
+        </comps>
+    </AbilityDef>
+
+</Defs>

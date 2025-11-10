@@ -13,7 +13,7 @@
             "command": "dotnet",
             "args": [
                 "build",
-                "${workspaceFolder}/1.5/Source/GojisMiscGenes.csproj"
+                "${workspaceFolder}/1.6/Source/GojisMiscGenes.csproj"
             ],
             "problemMatcher": "$msCompile",
             "group": {
