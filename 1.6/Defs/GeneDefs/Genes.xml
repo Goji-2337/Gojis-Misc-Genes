@@ -5,6 +5,7 @@
         <defName>Goji_MechaniteProne</defName>
         <label>mechanite prone</label>
         <description>Carriers of this gene are more susceptible to mechanite infections.</description>
+        <iconPath>UI/Icons/Genes/Gene_MechanoidProne</iconPath>
         <displayCategory>Miscellaneous</displayCategory>
         <biostatCpx>1</biostatCpx>
         <biostatMet>+1</biostatMet>
@@ -14,6 +15,7 @@
         <defName>Goji_PainStimulated</defName>
         <label>pain stimulated</label>
         <description>Carriers of this gene convert pain into stimulation, boosting their focus even as their bodies suffer.</description>
+        <iconPath>UI/Icons/Genes/Gene_PainStimulated</iconPath>
         <displayCategory>Archite</displayCategory>
         <biostatCpx>2</biostatCpx>
         <biostatMet>0</biostatMet>
@@ -24,6 +26,7 @@
         <defName>Goji_Clairvoyance</defName>
         <label>clairvoyance</label>
         <description>Carriers of this gene are gifted with a rare psychic attunement that unlocks their perception of distant places.</description>
+        <iconPath>UI/Icons/Genes/Gene_Clairvoyance</iconPath>
         <displayCategory>Miscellaneous</displayCategory>
         <biostatCpx>1</biostatCpx>
         <biostatMet>-1</biostatMet>
@@ -33,6 +36,7 @@
         <defName>Goji_Hibernation</defName>
         <label>hibernation</label>
         <description>Carriers of this gene can enter a state of deep torpor in extreme cold, slowing the debilitating effects of hypothermia.</description>
+        <iconPath>UI/Icons/Genes/Gene_Hibernation</iconPath>
         <displayCategory>Miscellaneous</displayCategory>
         <biostatCpx>1</biostatCpx>
         <biostatMet>-1</biostatMet>
@@ -42,6 +46,7 @@
         <defName>Goji_GauranlenDescendant</defName>
         <label>gauranlen descendant</label>
         <description>Carriers of this gene inherit the ancient bloodline of the dryad queen, granting them the exclusive power to awaken dryad cocoons linked to their connected Gauranlen trees at will.</description>
+        <iconPath>UI/Icons/Genes/Gene_GauranlenDescendant</iconPath>
         <displayCategory>Miscellaneous</displayCategory>
         <abilities>
             <li>Goji_CommandDryad</li>
@@ -54,15 +59,17 @@
         <defName>Goji_CheekPouch</defName>
         <label>cheek pouch</label>
         <description>Carriers of this gene develop specialised cheek pouches, allowing them to stash more food for later consumption.</description>
+        <iconPath>UI/Icons/Genes/Gene_CheekPouches</iconPath>
         <displayCategory>Miscellaneous</displayCategory>
         <biostatCpx>1</biostatCpx>
-        <biostatMet>-1</biostatMet>
+        <biostatMet>0</biostatMet>
     </GeneDef>
 
     <GeneDef>
         <defName>Goji_NatureRhythm</defName>
         <label>nature rhythm</label>
         <description>Carriers of this gene have a deep psychic connection to the natural world, allowing their psychic sensitivity to influence the speed at which they prune Gauranlen trees.</description>
+        <iconPath>UI/Icons/Genes/Gene_NatureRhythm</iconPath>
         <displayCategory>Archite</displayCategory>
         <biostatCpx>2</biostatCpx>
         <biostatMet>0</biostatMet>
@@ -73,6 +80,7 @@
         <defName>Goji_WindRider</defName>
         <label>wind rider</label>
         <description>Carriers of this gene ride the currents and find protection from the force of wild winds, though they become slow when the air is still.</description>
+        <iconPath>UI/Icons/Genes/Gene_WindRider</iconPath>
         <displayCategory>Miscellaneous</displayCategory>
         <biostatCpx>1</biostatCpx>
         <biostatMet>-1</biostatMet>

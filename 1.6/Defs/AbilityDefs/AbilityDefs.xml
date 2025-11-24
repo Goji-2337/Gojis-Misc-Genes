@@ -5,7 +5,7 @@
         <defName>Goji_CommandDryad</defName>
         <label>command dryad</label>
         <description>Instantly awakens all gestating dryad cocoons connected to the caster's Gauranlen trees across the map. The cooldown is proportional to the number of cocoons awakened.</description>
-        <iconPath>UI/Abilities/WordOfTrust</iconPath>
+        <iconPath>UI/Abilities/Gizmo_CommandDryad</iconPath>
         <cooldownTicksRange>100</cooldownTicksRange>
         <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
         <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
