@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <HediffDef ParentName="DiseaseBase">
+        <defName>Goji_MotionSicknessHediff</defName>
+        <label>motion sickness</label>
+        <description>After-effects of fast travel.</description>
+        <makesSickThought>true</makesSickThought>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>8000~12000</disappearsAfterTicks>
+                <showRemainingTime>true</showRemainingTime>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <vomitMtbDays>0.125</vomitMtbDays>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <postFactor>0.8</postFactor>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <postFactor>0.9</postFactor>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>Goji_CudChewing</defName>
+        <label>cud chewing</label>
+        <description>Slowly breaking down food for extra nutrition.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="GojisMiscGenes.HediffCompProperties_CudChewing" />
+        </comps>
+    </HediffDef>
+
+</Defs>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThoughtDef>
+        <defName>Goji_HoarderRoomSize</defName>
+        <workerClass>GojisMiscGenes.ThoughtWorker_HoarderRoomSize</workerClass>
+        <stages>
+            <li>
+                <label>very cramped</label>
+                <description>This space is perfectly tight and cosy. I love being surrounded by my things.</description>
+                <baseMoodEffect>10</baseMoodEffect>
+            </li>
+            <li>
+                <label>cramped</label>
+                <description>This space is nice and snug.</description>
+                <baseMoodEffect>5</baseMoodEffect>
+            </li>
+            <li>
+                <label>spacious</label>
+                <description>There is too much empty space here. I feel exposed and uncomfortable without my things.</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+</Defs>

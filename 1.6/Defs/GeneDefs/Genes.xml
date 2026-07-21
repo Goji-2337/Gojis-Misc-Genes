@@ -86,4 +86,99 @@
         <biostatMet>-1</biostatMet>
     </GeneDef>
 
+    <GeneDef>
+        <defName>Goji_RouteMemory</defName>
+        <label>route memory</label>
+        <description>Carrier remembers paths, shortcuts and safe crossings, shaving time off familiar journeys.</description>
+        <displayCategory>Miscellaneous</displayCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_LatentPsychic</defName>
+        <label>latent psychic</label>
+        <description>Carriers bear a hidden talent for psychic manipulation. When their traits manifest, they are very likely to become psychically sensitive and sometimes even stronger.</description>
+        <geneClass>GojisMiscGenes.Gene_LatentPsychic</geneClass>
+        <displayCategory>Miscellaneous</displayCategory>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-3</biostatMet>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_CudChew</defName>
+        <label>cud chew</label>
+        <description>Carriers chews very thoroughly and regurgitates plant matter later, gaining extra benefit from the same meal at the cost of slower eating.</description>
+        <displayCategory>Miscellaneous</displayCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-4</biostatMet>
+        <statFactors>
+            <EatingSpeed>0.5</EatingSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_Parroting</defName>
+        <label>parroting</label>
+        <description>Carrier compulsively mimics social interactions.</description>
+        <displayCategory>Miscellaneous</displayCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>0</biostatMet>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_MotionSickness</defName>
+        <label>motion sickness</label>
+        <description>This carrier’s inner ear cannot handle high‑speed travel. After landing from a drop pod or shuttle, they suffer short‑term sickness, making them weak and miserable for a while.</description>
+        <displayCategory>Miscellaneous</displayCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>1</biostatMet>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_NineLives</defName>
+        <label>nine lives</label>
+        <description>Carriers of this gene hoard extra lives in their tails as they age; the older they get, the harder they are to truly kill.</description>
+        <geneClass>GojisMiscGenes.Gene_NineLives</geneClass>
+        <displayCategory>Miscellaneous</displayCategory>
+        <biostatCpx>9</biostatCpx>
+        <biostatMet>0</biostatMet>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_TunnelVision</defName>
+        <label>tunnel vision</label>
+        <description>Carriers of this gene can only see ahead,</description>
+        <displayCategory>Miscellaneous</displayCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>3</biostatMet>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_PhantomPain</defName>
+        <label>phantom pain</label>
+        <description>Carriers of this gene have altered neural structures that amplify lingering pain from lost limbs, even when the wound is long healed or replaced.</description>
+        <displayCategory>Miscellaneous</displayCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>2</biostatMet>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_DenseScar</defName>
+        <label>dense scar</label>
+        <description>Carriers of this gene have scars that heal into thick, ridged tissues instead of smooth skin. These raised overgrown masses are tough to the touch and provide extra protection.</description>
+        <displayCategory>Miscellaneous</displayCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_Hoarder</defName>
+        <label>hoarder</label>
+        <description>Carriers of this gene are happiest when they can pile their belongings around them. They move cleanly through cluttered spaces, scattered items and furniture without slowing down.</description>
+        <displayCategory>Miscellaneous</displayCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+    </GeneDef>
+
 </Defs>
