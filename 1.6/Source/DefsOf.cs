@@ -22,7 +22,6 @@ namespace GojisMiscGenes
         public static GeneDef Goji_Parroting;
         public static GeneDef Goji_MotionSickness;
         public static GeneDef Goji_NineLives;
-        public static GeneDef Goji_TunnelVision;
         public static GeneDef Goji_PhantomPain;
         public static GeneDef Goji_DenseScar;
         public static GeneDef Goji_Hoarder;
@@ -30,6 +29,19 @@ namespace GojisMiscGenes
         public static HediffDef Goji_CudChewing;
         public static TraitDef PsychicSensitivity;
         public static DamageArmorCategoryDef Blunt;
+        public static ThingDef Ambrosia;
+        public static HediffDef AmbrosiaHigh;
+        [MayRequireIdeology]
+        public static InteractionDef WorkDrive;
+        [MayRequireIdeology]
+        public static InteractionDef PreachHealth;
+        [MayRequireIdeology]
+        [DefAlias("WorkDrive")]
+        public static HediffDef WorkDriveHediff;
+        [MayRequireIdeology]
+        [DefAlias("PreachHealth")]
+        public static HediffDef PreachHealthHediff;
+        public static BodyPartDef Stomach;
 
         static DefsOf()
         {

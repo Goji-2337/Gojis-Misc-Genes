@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using HarmonyLib;
 using RimWorld;
 using UnityEngine;
@@ -35,8 +34,7 @@ namespace GojisMiscGenes
                             diminishedByMetalArmor = true;
                             if (damageDef.armorCategory == DamageArmorCategoryDefOf.Sharp)
                             {
-                                var blunt = DefsOf.Blunt;
-                                if (blunt != null) damageDef.armorCategory = blunt;
+                                damageDef.armorCategory = DefsOf.Blunt;
                             }
                         }
                     }

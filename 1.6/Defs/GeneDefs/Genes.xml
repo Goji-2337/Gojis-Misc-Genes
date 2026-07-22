@@ -146,15 +146,6 @@
     </GeneDef>
 
     <GeneDef>
-        <defName>Goji_TunnelVision</defName>
-        <label>tunnel vision</label>
-        <description>Carriers of this gene can only see ahead,</description>
-        <displayCategory>Miscellaneous</displayCategory>
-        <biostatCpx>1</biostatCpx>
-        <biostatMet>3</biostatMet>
-    </GeneDef>
-
-    <GeneDef>
         <defName>Goji_PhantomPain</defName>
         <label>phantom pain</label>
         <description>Carriers of this gene have altered neural structures that amplify lingering pain from lost limbs, even when the wound is long healed or replaced.</description>

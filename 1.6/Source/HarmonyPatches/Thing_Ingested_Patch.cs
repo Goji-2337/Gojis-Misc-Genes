@@ -15,15 +15,17 @@ namespace GojisMiscGenes
                 var foodKind = FoodUtility.GetFoodKind(__instance);
                 if (foodKind != FoodKind.Meat && !__instance.def.IsMeat && !__instance.def.IsAnimalProduct)
                 {
+                    var stomachPart = ingester.health.hediffSet.GetBodyPartRecord(DefsOf.Stomach);
                     var hediff = ingester.health.hediffSet.GetFirstHediffOfDef(DefsOf.Goji_CudChewing);
                     if (hediff == null)
                     {
-                        hediff = HediffMaker.MakeHediff(DefsOf.Goji_CudChewing, ingester);
+                        hediff = HediffMaker.MakeHediff(DefsOf.Goji_CudChewing, ingester, stomachPart);
                         ingester.health.AddHediff(hediff);
                     }
 
                     var comp = hediff.TryGetComp<HediffComp_CudChewing>();
                     comp.nutritionToGive = __result * 0.5f;
+                    comp.ingestedDef = __instance.def;
 
                     var ingestingThoughts = FoodUtility.ThoughtsFromIngesting(ingester, __instance, __instance.def);
                     var thoughts = new List<ThoughtDef>();

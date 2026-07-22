@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using HarmonyLib;
 using UnityEngine;
 using Verse;
@@ -13,27 +12,31 @@ namespace GojisMiscGenes
         {
             if (pawn.HasActiveGene(DefsOf.Goji_Hoarder))
             {
-                var itemCost = 0;
-                var costWithoutItems = 0;
-                var things = pawn.Map.thingGrid.ThingsListAtFast(c);
-                var terrainDef = pawn.Map.terrainGrid.TerrainAt(c);
-                if (terrainDef != null) costWithoutItems = terrainDef.pathCost;
-                foreach (var t in things)
+                var terrain = c.GetTerrain(pawn.Map);
+                var terrainCost = terrain != null ? terrain.pathCost : 0;
+                var snowCost = WeatherBuildupUtility.MovementTicksAddOn(pawn.Map.snowGrid.GetCategory(c));
+                var cleanPathCost = Mathf.Max(terrainCost, snowCost);
+
+                var moveBase = (c.x != pawn.Position.x && c.z != pawn.Position.z) ? pawn.TicksPerMoveDiagonal : pawn.TicksPerMoveCardinal;
+                var expectedCost = (float)(moveBase + cleanPathCost);
+                if (pawn.CurJob != null)
                 {
-                    if (t.def.category == ThingCategory.Item)
+                    switch (pawn.jobs.curJob.locomotionUrgency)
                     {
-                        if (t.def.pathCost > itemCost) itemCost = t.def.pathCost;
-                    }
-                    else
-                    {
-                        if (t.def.pathCost > costWithoutItems) costWithoutItems = t.def.pathCost;
+                        case LocomotionUrgency.Amble:
+                            expectedCost = Mathf.Max(expectedCost * 3f, 60f);
+                            break;
+                        case LocomotionUrgency.Walk:
+                            expectedCost = Mathf.Max(expectedCost * 2f, 50f);
+                            break;
+                        case LocomotionUrgency.Jog:
+                            break;
+                        case LocomotionUrgency.Sprint:
+                            expectedCost = Mathf.RoundToInt(expectedCost * 0.75f);
+                            break;
                     }
                 }
-                var snowCost = WeatherBuildupUtility.MovementTicksAddOn(pawn.Map.snowGrid.GetCategory(c));
-                if (snowCost > costWithoutItems) costWithoutItems = snowCost;
-
-                var diff = Mathf.Max(itemCost, costWithoutItems) - costWithoutItems;
-                if (diff > 0) __result = Mathf.Max(1f, __result - diff);
+                __result = Mathf.Max(1f, Mathf.Min(__result, expectedCost));
             }
         }
     }

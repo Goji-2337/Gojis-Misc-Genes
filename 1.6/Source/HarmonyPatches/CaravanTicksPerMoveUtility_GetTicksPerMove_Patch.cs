@@ -12,7 +12,8 @@ namespace GojisMiscGenes
     {
         public static void Postfix(Caravan caravan, ref int __result)
         {
-            if (!caravan.pather.Moving) return;
+            var destination = caravan.pather.Destination;
+            if (destination.Valid is false) return;
 
             var hasRouteMemory = false;
             var pawns = caravan.PawnsListForReading;
@@ -27,8 +28,8 @@ namespace GojisMiscGenes
 
             if (hasRouteMemory)
             {
-                var mapParent = Find.WorldObjects.WorldObjectAt<MapParent>(caravan.pather.Destination);
-                if (mapParent != null && mapParent.HasMap)
+                var mapParent = Find.WorldObjects.WorldObjectAt<MapParent>(destination);
+                if (mapParent != null && mapParent.HasMap || mapParent is Settlement settlement && settlement.EverVisited)
                 {
                     __result = Mathf.RoundToInt(__result / 1.2f);
                 }

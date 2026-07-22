@@ -17,6 +17,17 @@ namespace GojisMiscGenes
                 try
                 {
                     recipient.interactions.TryInteractWith(initiator, __instance.interaction);
+                    if (ModsConfig.IdeologyActive)
+                    {
+                        if (__instance.interaction == DefsOf.WorkDrive)
+                        {
+                            initiator.health.AddHediff(DefsOf.WorkDriveHediff, initiator.health.hediffSet.GetBrain());
+                        }
+                        else if (__instance.interaction == DefsOf.PreachHealth)
+                        {
+                            initiator.health.AddHediff(DefsOf.PreachHealthHediff, initiator.health.hediffSet.GetBrain());
+                        }
+                    }
                 }
                 finally
                 {

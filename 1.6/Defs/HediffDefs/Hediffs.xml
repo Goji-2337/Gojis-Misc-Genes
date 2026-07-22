@@ -35,6 +35,7 @@
         <label>cud chewing</label>
         <description>Slowly breaking down food for extra nutrition.</description>
         <hediffClass>HediffWithComps</hediffClass>
+        <defaultInstallPart>Stomach</defaultInstallPart>
         <defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
         <isBad>false</isBad>
         <comps>
