@@ -19,13 +19,18 @@ namespace GojisMiscGenes
                     recipient.interactions.TryInteractWith(initiator, __instance.interaction);
                     if (ModsConfig.IdeologyActive)
                     {
+                        Hediff buffHediff = null;
                         if (__instance.interaction == DefsOf.WorkDrive)
                         {
-                            initiator.health.AddHediff(DefsOf.WorkDriveHediff, initiator.health.hediffSet.GetBrain());
+                            buffHediff = initiator.health.AddHediff(DefsOf.WorkDriveHediff, initiator.health.hediffSet.GetBrain());
                         }
                         else if (__instance.interaction == DefsOf.PreachHealth)
                         {
-                            initiator.health.AddHediff(DefsOf.PreachHealthHediff, initiator.health.hediffSet.GetBrain());
+                            buffHediff = initiator.health.AddHediff(DefsOf.PreachHealthHediff, initiator.health.hediffSet.GetBrain());
+                        }
+                        if (buffHediff != null)
+                        {
+                            buffHediff.TryGetComp<HediffComp_Disappears>().SetDuration(GenDate.TicksPerDay);
                         }
                     }
                 }

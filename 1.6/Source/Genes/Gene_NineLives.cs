@@ -10,12 +10,13 @@ namespace GojisMiscGenes
         {
             get
             {
+                if (!base.Active) return false;
                 var genes = pawn.genes.GenesListForReading;
                 foreach (var gene in genes)
                 {
-                    if (gene.Active && gene.def.exclusionTags != null && gene.def.exclusionTags.Contains("Tail"))
+                    if (gene != this && gene.def.exclusionTags != null && gene.def.exclusionTags.Contains("Tail") && gene.Active)
                     {
-                        return base.Active;
+                        return true;
                     }
                 }
                 return false;
