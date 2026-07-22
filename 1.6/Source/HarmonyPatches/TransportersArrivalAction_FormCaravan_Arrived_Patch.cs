@@ -9,13 +9,8 @@ namespace GojisMiscGenes
     [HarmonyPatch(typeof(TransportersArrivalAction_FormCaravan), nameof(TransportersArrivalAction_FormCaravan.Arrived))]
     public static class TransportersArrivalAction_FormCaravan_Arrived_Patch
     {
-        public static void Postfix(List<ActiveTransporterInfo> transporters, PlanetTile tile)
+        public static void Prefix(List<ActiveTransporterInfo> transporters, PlanetTile tile)
         {
-            if (!ModsConfig.BiotechActive)
-            {
-                return;
-            }
-
             var allThings = new List<Thing>();
             foreach (var transporter in transporters)
             {
