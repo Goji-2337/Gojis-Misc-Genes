@@ -31,7 +31,7 @@ namespace GojisMiscGenes
                 var mapParent = Find.WorldObjects.WorldObjectAt<MapParent>(destination);
                 if (mapParent != null && mapParent.HasMap || mapParent is Settlement settlement && settlement.EverVisited)
                 {
-                    __result = Mathf.RoundToInt(__result / 1.2f);
+                    __result = Mathf.RoundToInt(__result / 1.33f);
                 }
             }
         }

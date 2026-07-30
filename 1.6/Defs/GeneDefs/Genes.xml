@@ -37,7 +37,7 @@
             <li>Every 100% Psy-Sensitivity grants +1 psycast range.</li>
             <li>Does not affect adjacent-tile psycast (i.e. Skip yes, Word of Trust no).</li>
         </customEffectDescriptions>
-        <displayCategory>Psychics</displayCategory>
+        <displayCategory>Psychic</displayCategory>
         <biostatCpx>1</biostatCpx>
         <biostatMet>-1</biostatMet>
     </GeneDef>
@@ -117,7 +117,7 @@
         <defName>Goji_RouteMemory</defName>
         <label>route memory</label>
         <description>Carrier of this gene remembers paths, shortcuts and safe crossings, shaving time off familiar journeys.</description>
-		<iconPath>UI/Icons/Genes/Gene_RouteMemory</iconPath>
+        <iconPath>UI/Icons/Genes/Gene_RouteMemory</iconPath>
         <customEffectDescriptions>
             <li>Adds 33% caravan speed on routes to previously visited faction tiles; does not stack.</li>
         </customEffectDescriptions>
@@ -135,7 +135,7 @@
             <li>Forced Traits: Psychic Sensitive (2/3 chance); Psychic Hypersensitive (1/3 chance).</li>
             <li>Rolled on birth/each installation.</li>
         </customEffectDescriptions>
-		<geneClass>GojisMiscGenes.Gene_LatentPsychic</geneClass>
+        <geneClass>GojisMiscGenes.Gene_LatentPsychic</geneClass>
         <displayCategory>Miscellaneous</displayCategory>
         <biostatCpx>2</biostatCpx>
         <biostatMet>-3</biostatMet>
@@ -149,7 +149,7 @@
         <customEffectDescriptions>
             <li>Vegetarian food is regurgitated as if consumed again at half efficiency after a delay (6 in-game hours).</li>
         </customEffectDescriptions>
-		<displayCategory>Miscellaneous</displayCategory>
+        <displayCategory>Miscellaneous</displayCategory>
         <biostatCpx>1</biostatCpx>
         <biostatMet>-4</biostatMet>
         <statFactors>
@@ -161,7 +161,7 @@
         <defName>Goji_Parroting</defName>
         <label>parroting</label>
         <description>Carrier of this gene compulsively mimics social interactions.</description>
-		<iconPath>UI/Icons/Genes/Gene_Parroting</iconPath>
+        <iconPath>UI/Icons/Genes/Gene_Parroting</iconPath>
         <customEffectDescriptions>
             <li>Fires back received social interaction of the same type.</li>
         </customEffectDescriptions>
@@ -178,7 +178,7 @@
         <customEffectDescriptions>
             <li>Receives Motion Sickness ailment after landing via gravships, shuttles or drop pods.</li>
         </customEffectDescriptions>
-		<displayCategory>Miscellaneous</displayCategory>
+        <displayCategory>Miscellaneous</displayCategory>
         <biostatCpx>1</biostatCpx>
         <biostatMet>1</biostatMet>
     </GeneDef>
@@ -192,10 +192,11 @@
             <li>Requires any tail gene</li>
             <li>Gains 1 charge of death refusal on each birthday (maximum: 9 charges).</li>
         </customEffectDescriptions>
-		<geneClass>GojisMiscGenes.Gene_NineLives</geneClass>
-        <displayCategory>Miscellaneous</displayCategory>
+        <geneClass>GojisMiscGenes.Gene_NineLives</geneClass>
+        <displayCategory>Archite</displayCategory>
         <biostatCpx>9</biostatCpx>
         <biostatMet>0</biostatMet>
+        <biostatArc>1</biostatArc>
     </GeneDef>
 
     <GeneDef>
@@ -206,7 +207,7 @@
         <customEffectDescriptions>
             <li>Receives 4% pain for every missing or artificial body part, even if healed.</li>
         </customEffectDescriptions>
-		<displayCategory>Miscellaneous</displayCategory>
+        <displayCategory>Miscellaneous</displayCategory>
         <biostatCpx>1</biostatCpx>
         <biostatMet>2</biostatMet>
     </GeneDef>
@@ -219,7 +220,7 @@
         <customEffectDescriptions>
             <li>Each permanent scar adds sharp and blunt armor equal to its severity to that body part.</li>
         </customEffectDescriptions>
-		<displayCategory>Miscellaneous</displayCategory>
+        <displayCategory>Miscellaneous</displayCategory>
         <biostatCpx>1</biostatCpx>
         <biostatMet>-1</biostatMet>
     </GeneDef>
@@ -233,9 +234,19 @@
             <li>Reverses spatial mood thoughts.</li>
             <li>Ignores path cost when moving over non‑floor objects.</li>
         </customEffectDescriptions>
-		<displayCategory>Miscellaneous</displayCategory>
+        <displayCategory>Miscellaneous</displayCategory>
         <biostatCpx>1</biostatCpx>
         <biostatMet>-1</biostatMet>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_PathogenHost</defName>
+        <label>pathogen host</label>
+        <description>Carriers of this gene harbor non-fatal diseases once infected. The sickness stays with them for a long time.</description>
+        <iconPath>UI/Icons/Genes/Gene_PathogenHost</iconPath>
+        <displayCategory>Miscellaneous</displayCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>4</biostatMet>
     </GeneDef>
 
 </Defs>

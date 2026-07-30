@@ -42,6 +42,19 @@ namespace GojisMiscGenes
         [DefAlias("PreachHealth")]
         public static HediffDef PreachHealthHediff;
         public static BodyPartDef Stomach;
+        public static MeditationFocusDef Natural;
+        public static GeneDef Goji_NatureRhythm;
+        public static GeneDef Goji_PathogenHost;
+        public static HediffDef FibrousMechanites;
+        public static HediffDef SensoryMechanites;
+        public static HediffDef GutWorms;
+        public static HediffDef MuscleParasites;
+        [MayRequire("vanillaracesexpanded.fungoid")]
+        public static GeneDef VRE_Telepathy;
+        [MayRequire("vanillaracesexpanded.phytokin")]
+        public static GeneDef VRE_GreenThumb;
+        [MayRequire("vanillaracesexpanded.phytokin")]
+        public static ThoughtDef VRE_GreenThumbHappy;
 
         static DefsOf()
         {
