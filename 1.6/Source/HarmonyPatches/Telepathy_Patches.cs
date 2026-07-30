@@ -85,7 +85,7 @@ namespace GojisMiscGenes
     {
         public static bool Prepare() => ModsConfig.IsActive("vanillaracesexpanded.fungoid");
 
-        public static IEnumerable<string> Postfix(Dialog_BeginRitual __instance)
+        public static IEnumerable<string> Postfix(IEnumerable<string> __result, Dialog_BeginRitual __instance)
         {
             if (__instance.organizer.HasActiveGene(DefsOf.VRE_Telepathy) && !__instance.organizer.health.capacities.CapableOf(PawnCapacityDefOf.Talking))
             {
