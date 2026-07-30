@@ -9,7 +9,7 @@
         <customEffectDescriptions>
             <li>Becomes prioritised target for mechanite infection events.</li>
         </customEffectDescriptions>
-        <displayCategory>Miscellaneous</displayCategory>
+        <displayCategory>Healing</displayCategory>
         <biostatCpx>1</biostatCpx>
         <biostatMet>+1</biostatMet>
     </GeneDef>
@@ -50,7 +50,7 @@
         <customEffectDescriptions>
             <li>Develops Hypothermic slowdown instead of Hypothermia in extreme cold.</li>
         </customEffectDescriptions>
-        <displayCategory>Miscellaneous</displayCategory>
+        <displayCategory>Temperature</displayCategory>
         <biostatCpx>1</biostatCpx>
         <biostatMet>-1</biostatMet>
     </GeneDef>
@@ -60,10 +60,7 @@
         <label>gauranlen descendant</label>
         <description>Carriers of this gene inherit the ancient bloodline of the dryad queen, granting them the exclusive power to awaken dryad cocoons linked to their connected Gauranlen trees at will.</description>
         <iconPath>UI/Icons/Genes/Gene_GauranlenDescendant</iconPath>
-        <customEffectDescriptions>
-            <li>Gives ability: Command dryad</li>
-        </customEffectDescriptions>
-        <displayCategory>Miscellaneous</displayCategory>
+        <displayCategory>Ability</displayCategory>
         <abilities>
             <li>Goji_CommandDryad</li>
         </abilities>
@@ -108,7 +105,7 @@
             <li>Move speed scales with local wind speed (outdoors only).</li>
             <li>Warning: Your pawn might stop moving in calm weather.</li>
         </customEffectDescriptions>
-        <displayCategory>Miscellaneous</displayCategory>
+        <displayCategory>Movement</displayCategory>
         <biostatCpx>1</biostatCpx>
         <biostatMet>-1</biostatMet>
     </GeneDef>
@@ -121,7 +118,7 @@
         <customEffectDescriptions>
             <li>Adds 33% caravan speed on routes to previously visited faction tiles; does not stack.</li>
         </customEffectDescriptions>
-        <displayCategory>Miscellaneous</displayCategory>
+        <displayCategory>Movement</displayCategory>
         <biostatCpx>1</biostatCpx>
         <biostatMet>-1</biostatMet>
     </GeneDef>
@@ -136,7 +133,7 @@
             <li>Rolled on birth/each installation.</li>
         </customEffectDescriptions>
         <geneClass>GojisMiscGenes.Gene_LatentPsychic</geneClass>
-        <displayCategory>Miscellaneous</displayCategory>
+        <displayCategory>Psychic</displayCategory>
         <biostatCpx>2</biostatCpx>
         <biostatMet>-3</biostatMet>
     </GeneDef>
@@ -160,7 +157,7 @@
     <GeneDef>
         <defName>Goji_Parroting</defName>
         <label>parroting</label>
-        <description>Carrier of this gene compulsively mimics social interactions.</description>
+        <description>Carriers of this gene compulsively mimics social interactions.</description>
         <iconPath>UI/Icons/Genes/Gene_Parroting</iconPath>
         <customEffectDescriptions>
             <li>Fires back received social interaction of the same type.</li>
@@ -207,7 +204,7 @@
         <customEffectDescriptions>
             <li>Receives 4% pain for every missing or artificial body part, even if healed.</li>
         </customEffectDescriptions>
-        <displayCategory>Miscellaneous</displayCategory>
+        <displayCategory>Pain</displayCategory>
         <biostatCpx>1</biostatCpx>
         <biostatMet>2</biostatMet>
     </GeneDef>
@@ -248,7 +245,7 @@
             <li>Acquired non-fatal diseases (Mechanites, Gut worms, Muscles parasites) cannot be cured through normal tending.</li>
             <li>Medicine/tending still required for relief.</li>
         </customEffectDescriptions>
-        <displayCategory>Miscellaneous</displayCategory>
+        <displayCategory>Healing</displayCategory>
         <biostatCpx>1</biostatCpx>
         <biostatMet>4</biostatMet>
     </GeneDef>
