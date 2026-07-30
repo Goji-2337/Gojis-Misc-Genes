@@ -41,7 +41,9 @@ public static class ShotReport_AimOnTargetChance_IgnoringPosture_Patch
         return !ModsConfig.IsActive("Arquebus.StagzMerfolk");
     }
 
-    private static float meleeToRangeCoefficient = DefsOf.Stagz_KeenReflexes.HasModExtension<KeenReflexModExtension>() ? DefsOf.Stagz_KeenReflexes.GetModExtension<KeenReflexModExtension>().MeleeToRangeCoefficient : 1f;
+    private static float? _meleeToRangeCoefficient;
+
+    private static float MeleeToRangeCoefficient => _meleeToRangeCoefficient ??= DefsOf.Stagz_KeenReflexes.HasModExtension<KeenReflexModExtension>() ? DefsOf.Stagz_KeenReflexes.GetModExtension<KeenReflexModExtension>().MeleeToRangeCoefficient : 1f;
 
     private static void Postfix(ref float __result, ref TargetInfo ___target)
     {
@@ -50,7 +52,7 @@ public static class ShotReport_AimOnTargetChance_IgnoringPosture_Patch
         var pawn = ___target.Thing as Pawn;
         if (pawn != null && pawn.RaceProps.Humanlike && pawn.genes.HasActiveGene(DefsOf.Stagz_KeenReflexes) && __result < 1f)
         {
-            __result = Math.Max(__result - (pawn.GetStatValue(StatDefOf.MeleeDodgeChance, true, -1) * meleeToRangeCoefficient), 0.02f);
+            __result = Math.Max(__result - (pawn.GetStatValue(StatDefOf.MeleeDodgeChance, true, -1) * MeleeToRangeCoefficient), 0.02f);
         }
     }
 }
