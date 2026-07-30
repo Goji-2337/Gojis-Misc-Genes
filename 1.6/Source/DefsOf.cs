@@ -55,6 +55,7 @@ namespace GojisMiscGenes
         public static GeneDef VRE_GreenThumb;
         [MayRequire("vanillaracesexpanded.phytokin")]
         public static ThoughtDef VRE_GreenThumbHappy;
+        public static GeneDef Stagz_KeenReflexes;
 
         static DefsOf()
         {

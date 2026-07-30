@@ -8,4 +8,8 @@
     <Goji_Setting_ZeroCostArchite_Description>If checked, all non-vanilla Archite genes will have their metabolism cost set to 0. Original values are restored when unchecked.</Goji_Setting_ZeroCostArchite_Description>
     <Goji_TelepathyRitualRequiresAllCarriers>All participants must have the telepathy gene to be able to communicate with the speaker.</Goji_TelepathyRitualRequiresAllCarriers>
 
+    <Goji_KeenReflexes>Keen Reflexes</Goji_KeenReflexes>
+    <Goji_KeenReflexes_Value>Melee dodge applies to ranged attacks</Goji_KeenReflexes_Value>
+    <Goji_KeenReflexes_Description>Converts melee dodge chance to ranged dodge chance at 1:1 ratio</Goji_KeenReflexes_Description>
+
 </LanguageData>

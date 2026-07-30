@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Goji's Fantasy Race: Merren</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+                <GeneDef>
+                    <defName>Stagz_KeenReflexes</defName>
+                    <label>keen reflexes</label>
+                    <description>Carriers of this gene have extremely fast reflexes. They can even dodge incoming hits from a distance.</description>
+                    <customEffectDescriptions>
+                        <li>100% of melee dodge chance is applied to ranged dodge chance.</li>
+                    </customEffectDescriptions>
+                    <iconPath>UI/Icons/Genes/Gene_KeenReflex</iconPath>
+                    <displayCategory>Archite</displayCategory>
+                    <displayOrderInCategory>500</displayOrderInCategory>
+                    <biostatCpx>2</biostatCpx>
+                    <biostatMet>-5</biostatMet>
+                    <biostatArc>1</biostatArc>
+                    <modExtensions>
+                        <li Class="GojisMiscGenes.KeenReflexModExtension">
+                            <MeleeToRangeCoefficient>1</MeleeToRangeCoefficient>
+                        </li>
+                    </modExtensions>
+                </GeneDef>
+            </value>
+        </nomatch>
+    </Operation>
+</Patch>
