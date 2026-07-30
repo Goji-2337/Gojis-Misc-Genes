@@ -9,7 +9,29 @@ namespace GojisMiscGenes
     public static class TelepathyState
     {
         [ThreadStatic]
-        public static bool isTelepathyInteraction;
+        public static int isTelepathyInteraction;
+    }
+
+    [HarmonyPatch(typeof(SocialInteractionUtility), nameof(SocialInteractionUtility.CanInitiateInteraction))]
+    public static class Telepathy_CanInitiateInteraction_Patch
+    {
+        public static bool Prepare() => ModsConfig.IsActive("vanillaracesexpanded.fungoid");
+
+        public static void Prefix(Pawn pawn)
+        {
+            if (pawn.HasActiveGene(DefsOf.VRE_Telepathy))
+            {
+                TelepathyState.isTelepathyInteraction++;
+            }
+        }
+
+        public static void Postfix(Pawn pawn)
+        {
+            if (pawn.HasActiveGene(DefsOf.VRE_Telepathy))
+            {
+                TelepathyState.isTelepathyInteraction--;
+            }
+        }
     }
 
     [HarmonyPatch(typeof(Pawn_InteractionsTracker), nameof(Pawn_InteractionsTracker.CanInteractNowWith))]
@@ -21,13 +43,16 @@ namespace GojisMiscGenes
         {
             if (__instance.pawn.HasActiveGene(DefsOf.VRE_Telepathy) && recipient.HasActiveGene(DefsOf.VRE_Telepathy))
             {
-                TelepathyState.isTelepathyInteraction = true;
+                TelepathyState.isTelepathyInteraction++;
             }
         }
 
-        public static void Postfix()
+        public static void Postfix(Pawn_InteractionsTracker __instance, Pawn recipient)
         {
-            TelepathyState.isTelepathyInteraction = false;
+            if (__instance.pawn.HasActiveGene(DefsOf.VRE_Telepathy) && recipient.HasActiveGene(DefsOf.VRE_Telepathy))
+            {
+                TelepathyState.isTelepathyInteraction--;
+            }
         }
     }
 
@@ -40,13 +65,16 @@ namespace GojisMiscGenes
         {
             if (__instance.pawn.HasActiveGene(DefsOf.VRE_Telepathy) && recipient.HasActiveGene(DefsOf.VRE_Telepathy))
             {
-                TelepathyState.isTelepathyInteraction = true;
+                TelepathyState.isTelepathyInteraction++;
             }
         }
 
-        public static void Postfix()
+        public static void Postfix(Pawn_InteractionsTracker __instance, Pawn recipient)
         {
-            TelepathyState.isTelepathyInteraction = false;
+            if (__instance.pawn.HasActiveGene(DefsOf.VRE_Telepathy) && recipient.HasActiveGene(DefsOf.VRE_Telepathy))
+            {
+                TelepathyState.isTelepathyInteraction--;
+            }
         }
     }
 
@@ -57,7 +85,7 @@ namespace GojisMiscGenes
 
         public static bool Prefix(PawnCapacityDef capacity, ref bool __result)
         {
-            if (TelepathyState.isTelepathyInteraction && (capacity == PawnCapacityDefOf.Talking || capacity == PawnCapacityDefOf.Hearing))
+            if (TelepathyState.isTelepathyInteraction > 0 && (capacity == PawnCapacityDefOf.Talking || capacity == PawnCapacityDefOf.Hearing))
             {
                 __result = true;
                 return false;
