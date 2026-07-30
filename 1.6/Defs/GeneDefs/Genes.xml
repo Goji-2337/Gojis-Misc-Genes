@@ -23,7 +23,7 @@
             <li>Reverses consciousness penalty from pain.</li>
         </customEffectDescriptions>
         <displayCategory>Archite</displayCategory>
-        <biostatCpx>2</biostatCpx>
+        <biostatCpx>3</biostatCpx>
         <biostatMet>0</biostatMet>
         <biostatArc>1</biostatArc>
     </GeneDef>
@@ -38,7 +38,7 @@
             <li>Does not affect adjacent-tile psycast (i.e. Skip yes, Word of Trust no).</li>
         </customEffectDescriptions>
         <displayCategory>Psychic</displayCategory>
-        <biostatCpx>1</biostatCpx>
+        <biostatCpx>2</biostatCpx>
         <biostatMet>-1</biostatMet>
     </GeneDef>
 
@@ -68,7 +68,7 @@
             <li>Goji_CommandDryad</li>
         </abilities>
         <biostatCpx>1</biostatCpx>
-        <biostatMet>-3</biostatMet>
+        <biostatMet>-2</biostatMet>
     </GeneDef>
 
     <GeneDef>
@@ -94,7 +94,7 @@
             <li>Pruning speed scales with psychic sensitivity.</li>
         </customEffectDescriptions>
         <displayCategory>Archite</displayCategory>
-        <biostatCpx>2</biostatCpx>
+        <biostatCpx>3</biostatCpx>
         <biostatMet>0</biostatMet>
         <biostatArc>1</biostatArc>
     </GeneDef>
@@ -236,7 +236,7 @@
         </customEffectDescriptions>
         <displayCategory>Miscellaneous</displayCategory>
         <biostatCpx>1</biostatCpx>
-        <biostatMet>-1</biostatMet>
+        <biostatMet>0</biostatMet>
     </GeneDef>
 
     <GeneDef>
@@ -244,6 +244,10 @@
         <label>pathogen host</label>
         <description>Carriers of this gene harbor non-fatal diseases once infected. The sickness stays with them for a long time.</description>
         <iconPath>UI/Icons/Genes/Gene_PathogenHost</iconPath>
+        <customEffectDescriptions>
+            <li>Acquired non-fatal diseases (Mechanites, Gut worms, Muscles parasites) cannot be cured through normal tending.</li>
+            <li>Medicine/tending still required for relief.</li>
+        </customEffectDescriptions>
         <displayCategory>Miscellaneous</displayCategory>
         <biostatCpx>1</biostatCpx>
         <biostatMet>4</biostatMet>
