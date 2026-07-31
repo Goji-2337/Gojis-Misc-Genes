@@ -127,7 +127,7 @@
         <defName>Goji_LatentPsychic</defName>
         <label>latent psychic</label>
         <description>Carriers of this gene bear a hidden talent for psychic manipulation. When their traits manifest, they are very likely to become psychically sensitive and sometimes even stronger.</description>
-        <iconPath>UI/Icons/Genes/Gene_LatentPsychic</iconPath>
+        <iconPath>UI/Icons/Genes/Gene_LatentPsychics</iconPath>
         <customEffectDescriptions>
             <li>Forced Traits: Psychic Sensitive (2/3 chance); Psychic Hypersensitive (1/3 chance).</li>
             <li>Rolled on birth/each installation.</li>
@@ -243,7 +243,7 @@
         <iconPath>UI/Icons/Genes/Gene_PathogenHost</iconPath>
         <customEffectDescriptions>
             <li>Acquired non-fatal diseases (Mechanites, Gut worms, Muscles parasites) cannot be cured through normal tending.</li>
-            <li>Medicine/tending still required for relief.</li>
+            <li>Tending still required for relief.</li>
         </customEffectDescriptions>
         <displayCategory>Healing</displayCategory>
         <biostatCpx>1</biostatCpx>
