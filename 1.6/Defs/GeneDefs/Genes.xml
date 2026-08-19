@@ -148,7 +148,7 @@
         </customEffectDescriptions>
         <displayCategory>Miscellaneous</displayCategory>
         <biostatCpx>1</biostatCpx>
-        <biostatMet>-4</biostatMet>
+        <biostatMet>-3</biostatMet>
         <statFactors>
             <EatingSpeed>0.5</EatingSpeed>
         </statFactors>
@@ -219,7 +219,7 @@
         </customEffectDescriptions>
         <displayCategory>Miscellaneous</displayCategory>
         <biostatCpx>1</biostatCpx>
-        <biostatMet>-1</biostatMet>
+        <biostatMet>0</biostatMet>
     </GeneDef>
 
     <GeneDef>
