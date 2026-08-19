@@ -6,6 +6,8 @@
     <Goji_StatPart_WindRiderSpeed>Wind speed:</Goji_StatPart_WindRiderSpeed>
     <Goji_Setting_ZeroCostArchite_Label>Zero-cost Archite Genes</Goji_Setting_ZeroCostArchite_Label>
     <Goji_Setting_ZeroCostArchite_Description>If checked, all non-vanilla Archite genes will have their metabolism cost set to 0. Original values are restored when unchecked.</Goji_Setting_ZeroCostArchite_Description>
+    <Goji_Setting_DisableVE_Label>Disable Vanilla Expanded patches</Goji_Setting_DisableVE_Label>
+    <Goji_Setting_DisableVE_Description>If checked, this mod's compatibility patches for Vanilla Expanded mods (e.g. Clairvoyance range bonus on Vanilla Factions Expanded abilities) will be disabled. Requires restart.</Goji_Setting_DisableVE_Description>
     <Goji_TelepathyRitualRequiresAllCarriers>All participants must have the telepathy gene to be able to communicate with the speaker.</Goji_TelepathyRitualRequiresAllCarriers>
 
     <Goji_KeenReflexes>Keen Reflexes</Goji_KeenReflexes>
