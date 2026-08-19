@@ -8,11 +8,6 @@ namespace GojisMiscGenes
 {
     public static class VFECore_Abilities_GetRangeForPawn_Patch
     {
-        public static bool Prepare()
-        {
-            return !GojisMiscGenesMod.settings.disableVEPatches;
-        }
-
         public static MethodBase TargetMethod()
         {
             if (!ModLister.HasActiveModWithName("OskarPotocki.VanillaFactionsExpanded.Core"))

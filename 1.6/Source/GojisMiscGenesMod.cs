@@ -28,7 +28,9 @@ namespace GojisMiscGenes
             var listingStandard = new Listing_Standard();
             listingStandard.Begin(inRect);
             listingStandard.CheckboxLabeled("Goji_Setting_ZeroCostArchite_Label".Translate(), ref settings.zeroCostArchiteGenes, "Goji_Setting_ZeroCostArchite_Description".Translate());
-            listingStandard.CheckboxLabeled("Goji_Setting_DisableVE_Label".Translate(), ref settings.disableVEPatches, "Goji_Setting_DisableVE_Description".Translate());
+            listingStandard.CheckboxLabeled("Goji_Setting_DisableHussar_Label".Translate(), ref settings.disableHussarPatch, "Goji_Setting_DisableHussar_Description".Translate());
+            listingStandard.CheckboxLabeled("Goji_Setting_DisableFungoid_Label".Translate(), ref settings.disableFungoidPatch, "Goji_Setting_DisableFungoid_Description".Translate());
+            listingStandard.CheckboxLabeled("Goji_Setting_DisablePhytokin_Label".Translate(), ref settings.disablePhytokinPatch, "Goji_Setting_DisablePhytokin_Description".Translate());
             listingStandard.End();
             base.DoSettingsWindowContents(inRect);
         }

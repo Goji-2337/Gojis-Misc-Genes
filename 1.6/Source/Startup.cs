@@ -17,6 +17,11 @@ namespace GojisMiscGenes
                 return;
             }
 
+            if (GojisMiscGenesMod.settings.disableHussarPatch)
+            {
+                return;
+            }
+
             var weaponAptitudeCategory = DefDatabase<GeneCategoryDef>.GetNamed("VREH_WeaponAptitudes", errorOnFail: false);
             if (weaponAptitudeCategory != null)
             {

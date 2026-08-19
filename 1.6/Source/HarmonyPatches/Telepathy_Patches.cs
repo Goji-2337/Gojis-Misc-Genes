@@ -15,7 +15,7 @@ namespace GojisMiscGenes
     [HarmonyPatch(typeof(SocialInteractionUtility), nameof(SocialInteractionUtility.CanInitiateInteraction))]
     public static class Telepathy_CanInitiateInteraction_Patch
     {
-        public static bool Prepare() => ModsConfig.IsActive("vanillaracesexpanded.fungoid");
+        public static bool Prepare() => ModsConfig.IsActive("vanillaracesexpanded.fungoid") && !GojisMiscGenesMod.settings.disableFungoidPatch;
 
         public static void Prefix(Pawn pawn)
         {
@@ -37,7 +37,7 @@ namespace GojisMiscGenes
     [HarmonyPatch(typeof(Pawn_InteractionsTracker), nameof(Pawn_InteractionsTracker.CanInteractNowWith))]
     public static class Telepathy_CanInteractNowWith_Patch
     {
-        public static bool Prepare() => ModsConfig.IsActive("vanillaracesexpanded.fungoid");
+        public static bool Prepare() => ModsConfig.IsActive("vanillaracesexpanded.fungoid") && !GojisMiscGenesMod.settings.disableFungoidPatch;
 
         public static void Prefix(Pawn_InteractionsTracker __instance, Pawn recipient)
         {
@@ -59,7 +59,7 @@ namespace GojisMiscGenes
     [HarmonyPatch(typeof(Pawn_InteractionsTracker), nameof(Pawn_InteractionsTracker.TryInteractWith))]
     public static class Telepathy_TryInteractWith_Patch
     {
-        public static bool Prepare() => ModsConfig.IsActive("vanillaracesexpanded.fungoid");
+        public static bool Prepare() => ModsConfig.IsActive("vanillaracesexpanded.fungoid") && !GojisMiscGenesMod.settings.disableFungoidPatch;
 
         public static void Prefix(Pawn_InteractionsTracker __instance, Pawn recipient)
         {
@@ -81,7 +81,7 @@ namespace GojisMiscGenes
     [HarmonyPatch(typeof(PawnCapacitiesHandler), nameof(PawnCapacitiesHandler.CapableOf))]
     public static class Telepathy_CapableOf_Patch
     {
-        public static bool Prepare() => ModsConfig.IsActive("vanillaracesexpanded.fungoid");
+        public static bool Prepare() => ModsConfig.IsActive("vanillaracesexpanded.fungoid") && !GojisMiscGenesMod.settings.disableFungoidPatch;
 
         public static bool Prefix(PawnCapacityDef capacity, ref bool __result)
         {
@@ -97,7 +97,7 @@ namespace GojisMiscGenes
     [HarmonyPatch(typeof(CompAbility_RequiresCapacity), nameof(CompAbility_RequiresCapacity.GizmoDisabled))]
     public static class Telepathy_RequiresCapacity_Patch
     {
-        public static bool Prepare() => ModsConfig.IsActive("vanillaracesexpanded.fungoid");
+        public static bool Prepare() => ModsConfig.IsActive("vanillaracesexpanded.fungoid") && !GojisMiscGenesMod.settings.disableFungoidPatch;
 
         public static void Postfix(CompAbility_RequiresCapacity __instance, ref bool __result)
         {
@@ -111,7 +111,7 @@ namespace GojisMiscGenes
     [HarmonyPatch(typeof(Dialog_BeginRitual), "BlockingIssues")]
     public static class Telepathy_RitualBlocking_Patch
     {
-        public static bool Prepare() => ModsConfig.IsActive("vanillaracesexpanded.fungoid");
+        public static bool Prepare() => ModsConfig.IsActive("vanillaracesexpanded.fungoid") && !GojisMiscGenesMod.settings.disableFungoidPatch;
 
         public static IEnumerable<string> Postfix(IEnumerable<string> __result, Dialog_BeginRitual __instance)
         {

@@ -10,7 +10,7 @@ namespace GojisMiscGenes
     [HarmonyPatch(typeof(JobDriver_PruneGauranlenTre), nameof(JobDriver_PruneGauranlenTre.MakeNewToils))]
     public static class JobDriver_PruneGauranlenTree_MakeNewToils_Patch
     {
-        public static bool Prepare() => ModsConfig.IsActive("vanillaracesexpanded.phytokin");
+        public static bool Prepare() => ModsConfig.IsActive("vanillaracesexpanded.phytokin") && !GojisMiscGenesMod.settings.disablePhytokinPatch;
 
         public static IEnumerable<Toil> Postfix(IEnumerable<Toil> values, JobDriver_PruneGauranlenTre __instance)
         {
