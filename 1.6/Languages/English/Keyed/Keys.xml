@@ -18,21 +18,7 @@
     <Goji_KeenReflexes_Value>Melee dodge applies to ranged attacks</Goji_KeenReflexes_Value>
     <Goji_KeenReflexes_Description>Converts melee dodge chance to ranged dodge chance at 1:1 ratio</Goji_KeenReflexes_Description>
 
-    <Goji_PeaceRestCap>Peace rest</Goji_PeaceRestCap>
-    <Goji_PeaceResting>peace resting</Goji_PeaceResting>
-    <Goji_PeaceRestingCap>Peace resting</Goji_PeaceRestingCap>
-    <Goji_StartPeaceRest>Start peace rest</Goji_StartPeaceRest>
-    <Goji_NextPeaceRestNeed>Next peace rest in {DURATION}</Goji_NextPeaceRestNeed>
-    <Goji_PawnShouldPeaceRestNow>{PAWN_nameDef} should peace rest now.</Goji_PawnShouldPeaceRestNow>
-    <Goji_AlertLowPeaceRestPawn>{PAWN} needs peace rest</Goji_AlertLowPeaceRestPawn>
-    <Goji_AlertLowPeaceRestPawns>{NUMCULPRITS} colonists need peace rest</Goji_AlertLowPeaceRestPawns>
-    <Goji_AlertLowPeaceRestDesc>A colonist has not peace rested for a long time. If they go too long without peace rest, they will suffer from peace rest exhaustion.\n\nTo peace rest, select the colonist then right-click on their assigned bed or deathrest casket.\n\nThese people need peace rest:\n{CULPRITS}</Goji_AlertLowPeaceRestDesc>
-    <Goji_AlertPeaceRestComplete>Peace rest complete</Goji_AlertPeaceRestComplete>
-    <Goji_AlertPeaceRestCompleteDesc>The following people have completed their peace rest and can wake up safely</Goji_AlertPeaceRestCompleteDesc>
-    <Goji_WakePeaceRestDesc>Wake up from peace rest.\n\n{PAWN_nameDef} has been in peace rest for {DURATION}.</Goji_WakePeaceRestDesc>
-    <Goji_WakePeaceRestExtraSafe>{PAWN_nameDef} can now wake safely.</Goji_WakePeaceRestExtraSafe>
-    <Goji_WakePeaceRestExtraExhaustion>{PAWN_nameDef} needs to peace rest for at least {TOTAL}. Waking {PAWN_objective} early will make {PAWN_objective} ill, and {PAWN_pronoun} will not benefit from any deathrest buildings.</Goji_WakePeaceRestExtraExhaustion>
-    <Goji_AutoWakePeaceRestDesc>When on, {PAWN_nameDef} will automatically wake once {PAWN_possessive} peace rest is complete.\n\nWhile off, {PAWN_pronoun} will continue peace resting until you wake {PAWN_objective} manually.</Goji_AutoWakePeaceRestDesc>
-    <Goji_WarningWakingInterruptsPeaceRest>Waking {PAWN_nameDef} before {MINDURATION} has passed will interrupt {PAWN_possessive} peace rest, leaving {PAWN_objective} sick for days while {PAWN_pronoun} recovers. Waking early means {PAWN_nameDef} will not benefit from any deathrest buildings. {PAWN_pronoun} has been peace resting for {CURDURATION}.\n\nAre you sure you wish to wake {PAWN_nameDef}?</Goji_WarningWakingInterruptsPeaceRest>
+    <Goji_JinxedBloodline_QualityFactor>Gene offset</Goji_JinxedBloodline_QualityFactor>
+    <Goji_JinxedBloodline_QualityFactor_Tooltip>Carriers of jinxed bloodline disturb the psychic forces around them, reducing ritual power by 10% per carrier participating.</Goji_JinxedBloodline_QualityFactor_Tooltip>
 
 </LanguageData>

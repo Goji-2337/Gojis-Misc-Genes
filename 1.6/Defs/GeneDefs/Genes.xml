@@ -317,11 +317,9 @@
         <iconPath>UI/Icons/Genes/Gene_JinxedBloodline</iconPath>
         <customEffectDescriptions>
             <li>Mental breaks are always anomalous.</li>
+            <li>Psychic ritual power is reduced by 10% per carrier participating.</li>
         </customEffectDescriptions>
         <displayCategory>Miscellaneous</displayCategory>
-        <statOffsets>
-            <PsychicRitualQualityOffset>-0.1</PsychicRitualQualityOffset>
-        </statOffsets>
         <biostatCpx>1</biostatCpx>
         <biostatMet>-1</biostatMet>
     </GeneDef>
@@ -333,6 +331,7 @@
         <iconPath>UI/Icons/Genes/Gene_ImposingPsyforce</iconPath>
         <customEffectDescriptions>
             <li>Psychic effects applied to others scale with carrier's psychic sensitivity instead of target's.</li>
+            <li>Can cast psycasts even while incapable of violence.</li>
         </customEffectDescriptions>
         <displayCategory>Archite</displayCategory>
         <biostatCpx>1</biostatCpx>
