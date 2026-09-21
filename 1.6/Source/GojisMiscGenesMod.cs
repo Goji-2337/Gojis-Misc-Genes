@@ -53,10 +53,7 @@ namespace GojisMiscGenes
                         {
                             originalArchiteMetabolismCosts[geneDef] = geneDef.biostatMet;
                         }
-                        if (geneDef.biostatMet != 0)
-                        {
-                            geneDef.biostatMet = 0;
-                        }
+                        geneDef.biostatMet = 0;
                     }
                     else
                     {
