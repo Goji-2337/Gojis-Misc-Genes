@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <Goji_StatPart_GeneDependent_Prefix>{0}:</Goji_StatPart_GeneDependent_Prefix>
+    <Goji_StatPart_GeneDependent_Suffix>(Gene: {0})</Goji_StatPart_GeneDependent_Suffix>
+    <Goji_StatPart_WindRiderSpeed>Wind speed:</Goji_StatPart_WindRiderSpeed>
+    <Goji_Setting_ZeroCostArchite_Label>Zero-cost Archite Genes</Goji_Setting_ZeroCostArchite_Label>
+    <Goji_Setting_ZeroCostArchite_Description>If checked, all non-vanilla Archite genes will have their metabolism cost set to 0. Original values are restored when unchecked.</Goji_Setting_ZeroCostArchite_Description>
+    <Goji_Setting_DisableHussar_Label>Disable Hussar weapon aptitude patch</Goji_Setting_DisableHussar_Label>
+    <Goji_Setting_DisableHussar_Description>If checked, the modification to Vanilla Races Expanded - Hussar weapon aptitude gene metabolism costs will be disabled. Requires restart.</Goji_Setting_DisableHussar_Description>
+    <Goji_Setting_DisableFungoid_Label>Disable Fungoid telepathy patch</Goji_Setting_DisableFungoid_Label>
+    <Goji_Setting_DisableFungoid_Description>If checked, the Vanilla Races Expanded - Fungoid telepathy interaction patches will be disabled. Requires restart.</Goji_Setting_DisableFungoid_Description>
+    <Goji_Setting_DisablePhytokin_Label>Disable Phytokin green thumb patch</Goji_Setting_DisablePhytokin_Label>
+    <Goji_Setting_DisablePhytokin_Description>If checked, the Vanilla Races Expanded - Phytokin green thumb pruning thought patch will be disabled. Requires restart.</Goji_Setting_DisablePhytokin_Description>
+    <Goji_TelepathyRitualRequiresAllCarriers>All participants must have the telepathy gene to be able to communicate with the speaker.</Goji_TelepathyRitualRequiresAllCarriers>
+
+    <Goji_KeenReflexes>Keen Reflexes</Goji_KeenReflexes>
+    <Goji_KeenReflexes_Value>Melee dodge applies to ranged attacks</Goji_KeenReflexes_Value>
+    <Goji_KeenReflexes_Description>Converts melee dodge chance to ranged dodge chance at 1:1 ratio</Goji_KeenReflexes_Description>
+
+    <Goji_JinxedBloodline_QualityFactor>Gene offset</Goji_JinxedBloodline_QualityFactor>
+    <Goji_JinxedBloodline_QualityFactor_Tooltip>Carriers of jinxed bloodline disturb the psychic forces around them, reducing ritual power by 10% per carrier participating.</Goji_JinxedBloodline_QualityFactor_Tooltip>
+
+</LanguageData>

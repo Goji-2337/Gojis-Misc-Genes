@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <GeneDef>
+        <defName>Goji_MechaniteProne</defName>
+        <label>mechanite prone</label>
+        <description>Carriers of this gene are more susceptible to mechanite infections.</description>
+        <iconPath>UI/Icons/Genes/Gene_MechanoidProne</iconPath>
+        <customEffectDescriptions>
+            <li>Becomes prioritised target for mechanite infection events.</li>
+        </customEffectDescriptions>
+        <displayCategory>Healing</displayCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>+1</biostatMet>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_PainStimulated</defName>
+        <label>pain stimulated</label>
+        <description>Carriers of this gene convert pain into stimulation, boosting their focus even as their bodies suffer.</description>
+        <iconPath>UI/Icons/Genes/Gene_PainStimulated</iconPath>
+        <customEffectDescriptions>
+            <li>Reverses consciousness penalty from pain.</li>
+            <li>Pain increases lovin' chance instead of decreasing it.</li>
+        </customEffectDescriptions>
+        <displayCategory>Archite</displayCategory>
+        <biostatCpx>3</biostatCpx>
+        <biostatMet>0</biostatMet>
+        <biostatArc>1</biostatArc>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_Clairvoyance</defName>
+        <label>clairvoyance</label>
+        <description>Carriers of this gene are gifted with a rare psychic attunement that unlocks their perception of distant places.</description>
+        <iconPath>UI/Icons/Genes/Gene_Clairvoyance</iconPath>
+        <customEffectDescriptions>
+            <li>Every 100% Psy-Sensitivity grants +1 psycast range.</li>
+            <li>Does not affect adjacent-tile psycast (i.e. Skip yes, Word of Trust no).</li>
+        </customEffectDescriptions>
+        <displayCategory>Psychic</displayCategory>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-1</biostatMet>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_Hibernation</defName>
+        <label>hibernation</label>
+        <description>Carriers of this gene can enter a state of deep torpor in extreme cold, slowing the debilitating effects of hypothermia.</description>
+        <iconPath>UI/Icons/Genes/Gene_Hibernation</iconPath>
+        <customEffectDescriptions>
+            <li>Develops Hypothermic slowdown instead of Hypothermia in extreme cold.</li>
+        </customEffectDescriptions>
+        <displayCategory>Temperature</displayCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_GauranlenDescendant</defName>
+        <label>gauranlen descendant</label>
+        <description>Carriers of this gene inherit the ancient bloodline of the dryad queen, granting them the exclusive power to awaken dryad cocoons linked to their connected Gauranlen trees at will.</description>
+        <iconPath>UI/Icons/Genes/Gene_GauranlenDescendant</iconPath>
+        <displayCategory>Ability</displayCategory>
+        <abilities>
+            <li>Goji_CommandDryad</li>
+        </abilities>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-2</biostatMet>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_CheekPouch</defName>
+        <label>cheek pouch</label>
+        <description>Carriers of this gene develop specialised cheek pouches, allowing them to stash more food for later consumption.</description>
+        <iconPath>UI/Icons/Genes/Gene_CheekPouches</iconPath>
+        <customEffectDescriptions>
+            <li>Excess nutrition is stored beyond fullness (up to 200% capacity).</li>
+        </customEffectDescriptions>
+        <displayCategory>Miscellaneous</displayCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_NatureRhythm</defName>
+        <label>nature rhythm</label>
+        <description>Carriers of this gene have a deep psychic connection to the natural world, allowing their psychic sensitivity to influence the speed at which they prune Gauranlen trees.</description>
+        <iconPath>UI/Icons/Genes/Gene_NatureRhythm</iconPath>
+        <customEffectDescriptions>
+            <li>Grants Nature meditation focus.</li>
+            <li>Pruning speed scales with psychic sensitivity.</li>
+        </customEffectDescriptions>
+        <displayCategory>Archite</displayCategory>
+        <biostatCpx>3</biostatCpx>
+        <biostatMet>0</biostatMet>
+        <biostatArc>1</biostatArc>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_WindRider</defName>
+        <label>wind rider</label>
+        <description>Carriers of this gene ride the currents and find protection from the force of wild winds, though they become slow when the air is still.</description>
+        <iconPath>UI/Icons/Genes/Gene_WindRider</iconPath>
+        <customEffectDescriptions>
+            <li>Move speed scales with local wind speed (outdoors only).</li>
+            <li>Warning: Your pawn might stop moving in calm weather.</li>
+        </customEffectDescriptions>
+        <displayCategory>Movement</displayCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_RouteMemory</defName>
+        <label>route memory</label>
+        <description>Carrier of this gene remembers paths, shortcuts and safe crossings, shaving time off familiar journeys.</description>
+        <iconPath>UI/Icons/Genes/Gene_RouteMemory</iconPath>
+        <customEffectDescriptions>
+            <li>Adds 33% caravan speed on routes to previously visited faction tiles; does not stack.</li>
+        </customEffectDescriptions>
+        <displayCategory>Movement</displayCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_LatentPsychic</defName>
+        <label>latent psychic</label>
+        <description>Carriers of this gene bear a hidden talent for psychic manipulation. When their traits manifest, they are very likely to become psychically sensitive and sometimes even stronger.</description>
+        <iconPath>UI/Icons/Genes/Gene_LatentPsychics</iconPath>
+        <customEffectDescriptions>
+            <li>Forced Traits: Psychic Sensitive (2/3 chance); Psychic Hypersensitive (1/3 chance).</li>
+            <li>Rolled on birth/each installation.</li>
+        </customEffectDescriptions>
+        <geneClass>GojisMiscGenes.Gene_LatentPsychic</geneClass>
+        <displayCategory>Psychic</displayCategory>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-3</biostatMet>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_CudChew</defName>
+        <label>cud chew</label>
+        <description>Carriers of this gene chews very thoroughly and regurgitates plant matter later, gaining extra benefit from the same meal at the cost of slower eating.</description>
+        <iconPath>UI/Icons/Genes/Gene_CudChew</iconPath>
+        <customEffectDescriptions>
+            <li>Vegetarian food is regurgitated as if consumed again at half efficiency after a delay (6 in-game hours).</li>
+        </customEffectDescriptions>
+        <displayCategory>Miscellaneous</displayCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-3</biostatMet>
+        <statFactors>
+            <EatingSpeed>0.5</EatingSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_Parroting</defName>
+        <label>parroting</label>
+        <description>Carriers of this gene compulsively mimics social interactions.</description>
+        <iconPath>UI/Icons/Genes/Gene_Parroting</iconPath>
+        <customEffectDescriptions>
+            <li>Fires back received social interaction of the same type.</li>
+        </customEffectDescriptions>
+        <displayCategory>Miscellaneous</displayCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>0</biostatMet>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_MotionSickness</defName>
+        <label>motion sickness</label>
+        <description>Carrier of this gene has inner ear cannot handle high‑speed travel. After landing from a drop pod or shuttle, they suffer short‑term sickness, making them weak and miserable for a while.</description>
+        <iconPath>UI/Icons/Genes/Gene_MotionSickness</iconPath>
+        <customEffectDescriptions>
+            <li>Receives Motion Sickness ailment after landing via gravships, shuttles or drop pods.</li>
+        </customEffectDescriptions>
+        <displayCategory>Miscellaneous</displayCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>1</biostatMet>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_NineLives</defName>
+        <label>nine lives</label>
+        <description>Carriers of this gene hoard extra lives in their tails as they age; the older they get, the harder they are to truly kill.</description>
+        <iconPath>UI/Icons/Genes/Gene_NineLives</iconPath>
+        <customEffectDescriptions>
+            <li>Requires any tail gene</li>
+            <li>Gains 1 charge of death refusal on each birthday (maximum: 9 charges).</li>
+        </customEffectDescriptions>
+        <geneClass>GojisMiscGenes.Gene_NineLives</geneClass>
+        <displayCategory>Archite</displayCategory>
+        <biostatCpx>9</biostatCpx>
+        <biostatMet>0</biostatMet>
+        <biostatArc>1</biostatArc>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_PhantomPain</defName>
+        <label>phantom pain</label>
+        <description>Carriers of this gene have altered neural structures that amplify lingering pain from lost limbs, even when the wound is long healed or replaced.</description>
+        <iconPath>UI/Icons/Genes/Gene_PhantomPain</iconPath>
+        <customEffectDescriptions>
+            <li>Receives 4% pain for every missing or artificial body part, even if healed.</li>
+        </customEffectDescriptions>
+        <displayCategory>Pain</displayCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>2</biostatMet>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_DenseScar</defName>
+        <label>dense scar</label>
+        <description>Carriers of this gene have scars that heal into thick, ridged tissues instead of smooth skin. These raised overgrown masses are tough to the touch and provide extra protection.</description>
+        <iconPath>UI/Icons/Genes/Gene_DenseScar</iconPath>
+        <customEffectDescriptions>
+            <li>Each permanent scar adds sharp and blunt armor equal to its severity to that body part.</li>
+        </customEffectDescriptions>
+        <displayCategory>Miscellaneous</displayCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>0</biostatMet>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_Hoarder</defName>
+        <label>hoarder</label>
+        <description>Carriers of this gene are happiest when they can pile their belongings around them. They move cleanly through cluttered spaces, scattered items and furniture without slowing down.</description>
+        <iconPath>UI/Icons/Genes/Gene_Hoarder</iconPath>
+        <customEffectDescriptions>
+            <li>Reverses spatial mood thoughts.</li>
+            <li>Ignores path cost when moving over non‑floor objects.</li>
+        </customEffectDescriptions>
+        <displayCategory>Miscellaneous</displayCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>0</biostatMet>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_PathogenHost</defName>
+        <label>pathogen host</label>
+        <description>Carriers of this gene harbor non-fatal diseases once infected. The sickness stays with them for a long time.</description>
+        <iconPath>UI/Icons/Genes/Gene_PathogenHost</iconPath>
+        <customEffectDescriptions>
+            <li>Acquired non-fatal diseases (Mechanites, Gut worms, Muscles parasites) cannot be cured through normal tending.</li>
+            <li>Tending still required for relief.</li>
+        </customEffectDescriptions>
+        <displayCategory>Healing</displayCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>4</biostatMet>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_PlaceboEffect</defName>
+        <label>placebo effect</label>
+        <description>Carriers of this gene are greatly encouraged by knowing that they are being treated. This reassurance provokes a powerful physical response, allowing their body to recover from injury and disease with unusual speed and effectiveness.</description>
+        <iconPath>UI/Icons/Genes/Gene_PlaceboEffect</iconPath>
+        <customEffectDescriptions>
+            <li>Tending always achieves the maximum quality permitted by the treatment.</li>
+        </customEffectDescriptions>
+        <displayCategory>Healing</displayCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_PainFortitude</defName>
+        <label>pain fortitude</label>
+        <description>The carrier of this gene possesses an extraordinary capacity to endure pain. Their nervous system can withstand the agonising stresses of ghoul augmentation without the mental collapse normally required to make such implants viable.</description>
+        <iconPath>UI/Icons/Genes/Gene_PainFortitude</iconPath>
+        <customEffectDescriptions>
+            <li>Immune to pain shock and incapacitation from pain.</li>
+            <li>Can receive ghoul implants without becoming a ghoul.</li>
+        </customEffectDescriptions>
+        <displayCategory>Archite</displayCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <biostatArc>1</biostatArc>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_PassiveAggressive</defName>
+        <label>passive aggressive</label>
+        <description>Carriers of this gene rarely express hostility through open violence. Instead, they carry their resentment long after others have moved on. When pushed beyond their limit, they do not calm easily.</description>
+        <iconPath>UI/Icons/Genes/Gene_PassiveAggressive</iconPath>
+        <customEffectDescriptions>
+            <li>Never initiates social fights, but will fight back if attacked.</li>
+            <li>Negative social opinion memories last twice as long.</li>
+            <li>Mental breaks always last their maximum duration.</li>
+        </customEffectDescriptions>
+        <displayCategory>Violence</displayCategory>
+        <exclusionTags>
+            <li>Aggression</li>
+        </exclusionTags>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+    </GeneDef>
+
+    <GeneDef MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>Goji_ExoticDiseaseProne</defName>
+        <label>exotic disease prone</label>
+        <description>The carrier of this gene is vulnerable to rare and poorly understood illnesses. Their body is unusually susceptible to exotic bacterial and neurological afflictions that seldom trouble ordinary people on this planet.</description>
+        <iconPath>UI/Icons/Genes/Gene_ExoticDiseaseProne</iconPath>
+        <customEffectDescriptions>
+            <li>Can contract blood rot and paralytic abasia from disease events.</li>
+        </customEffectDescriptions>
+        <displayCategory>Healing</displayCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>1</biostatMet>
+    </GeneDef>
+
+    <GeneDef MayRequire="Ludeon.RimWorld.Anomaly">
+        <defName>Goji_JinxedBloodline</defName>
+        <label>jinxed bloodline</label>
+        <description>The carrier of this gene bears a hereditary connection to forces beyond ordinary understanding. Their moments of psychological collapse take strange and unsettling forms, and their presence subtly disrupts psychic rituals performed nearby.</description>
+        <iconPath>UI/Icons/Genes/Gene_JinxedBloodline</iconPath>
+        <customEffectDescriptions>
+            <li>Mental breaks are always anomalous.</li>
+            <li>Psychic ritual power is reduced by 10% per carrier participating.</li>
+        </customEffectDescriptions>
+        <displayCategory>Miscellaneous</displayCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_ImposingPsyforce</defName>
+        <label>imposing psyforce</label>
+        <description>The carrier of this gene possesses an unusually forceful psychic presence. Their thoughts press into other minds with great intensity that most people struggle to withstand them.</description>
+        <iconPath>UI/Icons/Genes/Gene_ImposingPsyforce</iconPath>
+        <customEffectDescriptions>
+            <li>Psychic effects applied to others scale with carrier's psychic sensitivity instead of target's.</li>
+            <li>Can cast psycasts even while incapable of violence.</li>
+        </customEffectDescriptions>
+        <displayCategory>Archite</displayCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <biostatArc>1</biostatArc>
+    </GeneDef>
+
+    <GeneDef MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>Goji_FocusLoop</defName>
+        <label>focus loop</label>
+        <description>The carrier of this gene can reclaim the psychic energy released as neural heat. As their mind cools, lost potential is drawn back into focus.</description>
+        <iconPath>UI/Icons/Genes/Gene_FocusLoop</iconPath>
+        <customEffectDescriptions>
+            <li>Natural neural heat dissipation restores 1% psyfocus per 10 neural heat dissipated.</li>
+        </customEffectDescriptions>
+        <displayCategory>Archite</displayCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <biostatArc>1</biostatArc>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_PeaceRest</defName>
+        <label>peace rest</label>
+        <description>The carriers of this gene must periodically enter a profound, restorative coma.</description>
+        <geneClass>GojisMiscGenes.Gene_PeaceRest</geneClass>
+        <iconPath>UI/Icons/Genes/Gene_PeaceRest</iconPath>
+        <displayCategory>Sleep</displayCategory>
+        <enablesNeeds>
+            <li>Deathrest</li>
+        </enablesNeeds>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <minAgeActive>3</minAgeActive>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_Pollinator</defName>
+        <label>pollinator</label>
+        <description>The carrier of this gene produces a sweet floral scent and carries fine pollen on their skin. As they move among flowering plants, they encourage growth and help them bear a more abundant harvest.</description>
+        <iconPath>UI/Icons/Genes/Gene_Pollinator</iconPath>
+        <customEffectDescriptions>
+            <li>Others perceive a sweet scent (+5 opinion).</li>
+            <li>Walking over growing plants grants 1% growth once per day.</li>
+        </customEffectDescriptions>
+        <displayCategory>Miscellaneous</displayCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+    </GeneDef>
+
+    <GeneDef Name="Goji_DrugReceptiveBase" Abstract="True">
+        <displayCategory>Drugs</displayCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <customEffectDescriptions>
+            <li>Consuming the drug applies a separate, stacking high rather than refreshing duration.</li>
+            <li>Does not prevent overdose or addiction.</li>
+        </customEffectDescriptions>
+    </GeneDef>
+
+    <GeneDef ParentName="Goji_DrugReceptiveBase">
+        <defName>Goji_DrugReceptive_Psychite</defName>
+        <label>psychite receptive</label>
+        <description>Carriers of this gene can stack psychite highs without resetting their duration.</description>
+        <iconPath>UI/Icons/Genes/Gene_DrugReceptive_Psychite</iconPath>
+    </GeneDef>
+
+    <GeneDef ParentName="Goji_DrugReceptiveBase">
+        <defName>Goji_DrugReceptive_GoJuice</defName>
+        <label>go-juice receptive</label>
+        <description>Carriers of this gene can stack go-juice highs without resetting their duration.</description>
+        <iconPath>UI/Icons/Genes/Gene_DrugReceptive_GoJuice</iconPath>
+    </GeneDef>
+
+    <GeneDef ParentName="Goji_DrugReceptiveBase">
+        <defName>Goji_DrugReceptive_WakeUp</defName>
+        <label>wake-up receptive</label>
+        <description>Carriers of this gene can stack wake-up highs without resetting their duration.</description>
+        <iconPath>UI/Icons/Genes/Gene_DrugReceptive_WakeUp</iconPath>
+    </GeneDef>
+
+</Defs>

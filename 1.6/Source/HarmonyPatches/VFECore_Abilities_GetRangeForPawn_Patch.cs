@@ -14,13 +14,13 @@ namespace GojisMiscGenes
             {
                 return null;
             }
-            return AccessTools.Method(typeof(VFECore.Abilities.Ability), nameof(VFECore.Abilities.Ability.GetRangeForPawn));
+            return AccessTools.Method(typeof(VEF.Abilities.Ability), nameof(VEF.Abilities.Ability.GetRangeForPawn));
         }
 
         public static void Postfix(object __instance, ref float __result)
         {
             if (__instance == null) return;
-            var ability = __instance as VFECore.Abilities.Ability;
+            var ability = __instance as VEF.Abilities.Ability;
             var pawn = ability.pawn;
             bool hasPsycastExtension = false;
             if (ability.def.modExtensions != null)

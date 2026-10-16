@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThoughtDef>
+        <defName>Goji_DryadDiedGreaterDebuff</defName>
+        <thoughtClass>Thought_Memory</thoughtClass>
+        <durationDays>6</durationDays>
+        <stackLimit>4</stackLimit>
+        <stages>
+            <li>
+                <label>dryad died</label>
+                <description>My tree's dryad is gone forever. You shall be missed, little one.</description>
+                <baseMoodEffect>-6</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+</Defs>
