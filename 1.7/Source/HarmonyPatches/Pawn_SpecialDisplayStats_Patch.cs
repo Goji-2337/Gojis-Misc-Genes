@@ -9,8 +9,6 @@ namespace GojisMiscGenes
     [HarmonyPatch(typeof(Pawn), "SpecialDisplayStats")]
     public static class Pawn_SpecialDisplayStats_Patch
     {
-        public static bool Prepare() => !ModsConfig.IsActive("Arquebus.StagzMerfolk");
-
         private static IEnumerable<StatDrawEntry> Postfix(IEnumerable<StatDrawEntry> __result, Pawn __instance)
         {
             if (__instance != null && __instance.RaceProps.Humanlike && __instance.genes.HasActiveGene(DefsOf.Stagz_KeenReflexes))
