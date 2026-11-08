@@ -6,7 +6,7 @@ using RimWorld;
 
 namespace GojisMiscGenes
 {
-    public static class VFECore_Abilities_GetRangeForPawn_Patch
+    public static class VEF_Abilities_GetRangeForPawn_Patch
     {
         public static MethodBase TargetMethod()
         {

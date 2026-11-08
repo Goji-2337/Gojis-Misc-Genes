@@ -17,7 +17,10 @@ namespace GojisMiscGenes
                 {
                     if (hediff is Hediff_AddedPart addedPart && !addedPart.def.organicAddedBodypart) extraPain += 0.04f;
                 }
-                __result = Mathf.Clamp(__result + extraPain, 0f, 1f);
+                var factor = 1f;
+                foreach (var hediff in __instance.hediffs) factor *= hediff.PainFactor;
+                factor *= __instance.pawn.genes.PainFactor;
+                __result = Mathf.Clamp(__result + extraPain * factor, 0f, 1f);
             }
         }
     }
