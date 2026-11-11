@@ -21,4 +21,10 @@
     <Goji_JinxedBloodline_QualityFactor>Gene offset</Goji_JinxedBloodline_QualityFactor>
     <Goji_JinxedBloodline_QualityFactor_Tooltip>Carriers of jinxed bloodline disturb the psychic forces around them, reducing ritual power by 10% per carrier participating.</Goji_JinxedBloodline_QualityFactor_Tooltip>
 
+    <Goji_MessageImprintedOn>{BABY_labelShort} has imprinted on {FEEDER_labelShort}, recognising {FEEDER_objective} as {BABY_possessive} sole parent.</Goji_MessageImprintedOn>
+    <Goji_MessageImprintedTraitCopied>{CHILD_labelShort} has learned from {PARENT_labelShort} and acquired the trait: {TRAIT}.</Goji_MessageImprintedTraitCopied>
+    <Goji_ImprintedParent>Imprinted parent: {PARENT_labelShort}</Goji_ImprintedParent>
+    <Goji_NotYetImprinted>Not yet imprinted</Goji_NotYetImprinted>
+    <Goji_Imprint_Desc>Carriers of this gene form a lasting bond with the first person to feed them, recognising that person as their sole parent. They learn by watching and imitating their parent, taking on one of their traits at age 3.</Goji_Imprint_Desc>
+
 </LanguageData>

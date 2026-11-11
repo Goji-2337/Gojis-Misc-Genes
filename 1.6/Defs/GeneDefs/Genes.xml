@@ -413,4 +413,33 @@
         <iconPath>UI/Icons/Genes/Gene_DrugReceptive_WakeUp</iconPath>
     </GeneDef>
 
+    <GeneDef>
+        <defName>Goji_SocialGrooming</defName>
+        <label>social grooming</label>
+        <description>The carrier of this gene instinctively tidies the appearance of others during friendly interaction. Brushing away dirt and debris or straightening a companion's clothing is a natural expression of affection.</description>
+        <iconPath>UI/Icons/Genes/Gene_SocialGrooming</iconPath>
+        <customEffectDescriptions>
+            <li>Positive interaction removes all tracked filth from a friendly recipient.</li>
+        </customEffectDescriptions>
+        <displayCategory>Miscellaneous</displayCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>0</biostatMet>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Goji_Imprint</defName>
+        <label>imprint</label>
+        <description>Carriers of this gene form a lasting bond with the first person to feed them, recognising that person as their sole parent. They learn by watching and imitating their parent, taking on one of their traits at age 3.</description>
+        <iconPath>UI/Icons/Genes/Gene_Imprint</iconPath>
+        <customEffectDescriptions>
+            <li>Newborn start with no parent relationships.</li>
+            <li>Permanently recognise the first pawn to feed them as their sole parent.</li>
+            <li>At age 3, they copy one random trait from that parent.</li>
+        </customEffectDescriptions>
+        <geneClass>GojisMiscGenes.Gene_Imprint</geneClass>
+        <displayCategory>Miscellaneous</displayCategory>
+        <biostatCpx>0</biostatCpx>
+        <biostatMet>0</biostatMet>
+    </GeneDef>
+
 </Defs>

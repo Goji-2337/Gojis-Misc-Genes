@@ -57,6 +57,8 @@ namespace GojisMiscGenes
         public static GeneDef Goji_FocusLoop;
         public static GeneDef Goji_PeaceRest;
         public static GeneDef Goji_Pollinator;
+        public static GeneDef Goji_SocialGrooming;
+        public static GeneDef Goji_Imprint;
         public static HediffDef FibrousMechanites;
         public static HediffDef SensoryMechanites;
         public static HediffDef GutWorms;

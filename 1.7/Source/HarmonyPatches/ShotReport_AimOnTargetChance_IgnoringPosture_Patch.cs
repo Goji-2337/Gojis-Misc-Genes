@@ -8,6 +8,8 @@ namespace GojisMiscGenes
     [HarmonyPatch(typeof(ShotReport), "AimOnTargetChance_IgnoringPosture", MethodType.Getter)]
     public static class ShotReport_AimOnTargetChance_IgnoringPosture_Patch
     {
+        public static bool Prepare() => !ModsConfig.IsActive("Arquebus.StagzMerfolk");
+
         private static float? _meleeToRangeCoefficient;
 
         private static float MeleeToRangeCoefficient => _meleeToRangeCoefficient ??= DefsOf.Stagz_KeenReflexes.HasModExtension<KeenReflexModExtension>() ? DefsOf.Stagz_KeenReflexes.GetModExtension<KeenReflexModExtension>().MeleeToRangeCoefficient : 1f;
