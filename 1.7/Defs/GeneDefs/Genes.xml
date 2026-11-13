@@ -299,7 +299,7 @@
 
     <GeneDef MayRequire="Ludeon.RimWorld.Royalty">
         <defName>Goji_ExoticDiseaseProne</defName>
-        <label>exotic disease prone</label>
+        <label>exotic diseases</label>
         <description>Carriers of this gene is vulnerable to rare and poorly understood illnesses. Their body is unusually susceptible to exotic bacterial and neurological afflictions that seldom trouble ordinary people on this planet.</description>
         <iconPath>UI/Icons/Genes/Gene_ExoticDiseases</iconPath>
         <customEffectDescriptions>
@@ -326,7 +326,7 @@
 
     <GeneDef>
         <defName>Goji_ImposingPsyforce</defName>
-        <label>imposing psyforce</label>
+        <label>psychic imposition</label>
         <description>Carriers of this gene possesses an unusually forceful psychic presence. Their thoughts press into other minds with great intensity that most people struggle to withstand them.</description>
         <iconPath>UI/Icons/Genes/Gene_ImposingPsyforce</iconPath>
         <customEffectDescriptions>
@@ -397,6 +397,9 @@
         <label>psychite receptive</label>
         <description>Carriers of this gene respond to repeated doses of Psychite.</description>
         <iconPath>UI/Icons/Genes/Gene_DrugReceptive_Psychite</iconPath>
+        <exclusionTags>
+            <li>Addiction_Psychite</li>
+        </exclusionTags>
     </GeneDef>
 
     <GeneDef ParentName="Goji_DrugReceptiveBase">
@@ -404,6 +407,9 @@
         <label>go-juice receptive</label>
         <description>Carriers of this gene respond to repeated doses of Go-juice.</description>
         <iconPath>UI/Icons/Genes/Gene_DrugReceptive_GoJuice</iconPath>
+        <exclusionTags>
+            <li>Addiction_GoJuice</li>
+        </exclusionTags>
     </GeneDef>
 
     <GeneDef ParentName="Goji_DrugReceptiveBase">
@@ -411,6 +417,9 @@
         <label>wake-up receptive</label>
         <description>Carriers of this gene respond to repeated doses of Wake-up.</description>
         <iconPath>UI/Icons/Genes/Gene_DrugReceptive_Wakeup</iconPath>
+        <exclusionTags>
+            <li>Addiction_WakeUp</li>
+        </exclusionTags>
     </GeneDef>
 
     <GeneDef>
