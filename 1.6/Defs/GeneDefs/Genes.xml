@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
@@ -338,6 +337,20 @@
         <biostatCpx>4</biostatCpx>
         <biostatMet>0</biostatMet>
         <biostatArc>1</biostatArc>
+    </GeneDef>
+
+    <GeneDef MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>Goji_FocusLoop</defName>
+        <label>focus loop</label>
+        <description>Carriers of this gene can reclaim the psychic energy released as neural heat. As their mind cools, lost potential is drawn back into focus.</description>
+        <iconPath>UI/Icons/Genes/Gene_FocusLoop</iconPath>
+        <customEffectDescriptions>
+            <li>Recovers psyfocus as neural heat dissipates.</li>
+        </customEffectDescriptions>
+        <displayCategory>Archite</displayCategory>
+        <biostatCpx>6</biostatCpx>
+        <biostatMet>0</biostatMet>
+        <biostatArc>9</biostatArc>
     </GeneDef>
 
     <GeneDef>
