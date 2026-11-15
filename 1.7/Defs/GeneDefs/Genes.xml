@@ -389,7 +389,7 @@
         <customEffectDescriptions>
             <li>Drug highs stack instead of refreshing.</li>
             <li>Does not prevent overdose or addiction.</li>
-			<li>Overrides drug resistant or impervious.</li>
+			<li>Conflicts with drug resistant or impervious.</li>
         </customEffectDescriptions>
     </GeneDef>
 
