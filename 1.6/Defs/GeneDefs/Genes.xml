@@ -410,27 +410,6 @@
     </GeneDef>
 
     <GeneDef>
-        <defName>Stagz_KeenReflexes</defName>
-        <label>keen reflexes</label>
-        <description>Carriers of this gene have extremely fast reflexes. They can even dodge rapid bullet fire.</description>
-        <customEffectDescriptions>
-            <li>Becomes able to dodge ranged attacks.</li>
-            <li>Uses 100% of melee dodge chance.</li>
-        </customEffectDescriptions>
-        <iconPath>UI/Icons/Genes/Gene_KeenReflex</iconPath>
-        <displayCategory>Archite</displayCategory>
-        <displayOrderInCategory>500</displayOrderInCategory>
-        <biostatCpx>3</biostatCpx>
-        <biostatMet>0</biostatMet>
-        <biostatArc>1</biostatArc>
-        <modExtensions>
-            <li Class="GojisMiscGenes.KeenReflexModExtension">
-                <MeleeToRangeCoefficient>1</MeleeToRangeCoefficient>
-            </li>
-        </modExtensions>
-    </GeneDef>
-
-    <GeneDef>
         <defName>Goji_SocialGrooming</defName>
         <label>social grooming</label>
         <description>The carrier of this gene instinctively tidies the appearance of others during friendly interaction. Brushing away dirt and debris or straightening a companion's clothing is a natural expression of affection.</description>
